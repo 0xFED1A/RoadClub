@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta
+      name="description"
+      content="Road Club - ресурс о велосипедах и велопутешествиях"
+    >
+    <meta
+      name="keywords"
+      content="Road Club, велосипед, велопутешествия, велосервисы"
+    >
+    <meta name="author" content="Фёдор Шенделов">
+    <title>Road Club</title>
+    <link rel="stylesheet" href="./pages/index.css">
+  </head>
+  <body class="page">
+    <header class="header">
+      <nav class="header__nav-links">
+        <a class="header__nav-link" href="#" target="_self">Покрытия и градиенты</a>
+        <a class="header__nav-link" href="#" target="_self">Велосипеды</a>
+        <a class="header__nav-link" href="#" target="_self">Тренировки</a>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="cta-promotion">
+        <h1 class="cta-promotion__heading">Шоссе, ТТ и Грэвел</h1>
+        <p class="cta-promotion__text">
+          Триатлонные старты, горные серпантины или грейвел заезды по
+          живописным маршрутам – нужно только определиться с выбором велосипеда
+          и отправиться в путь.
+        </p>
+        <a class="cta-promotion__button" href="#">Подробнее</a>
+        <figure class="cta-promotion__bike-figure bike-figure">
+          <picture class="bike-figure__picture">
+            <img class="bike-figure__image" src="#" alt="">
+          </picture>
+          <figcaption class="bike-figure__caption">Cannondale Systemsix</figcaption>
+        </figure>
+      </section>
+      <section class="quote" aria-label="Катайся как хочешь - но катайся">
+        <picture class="quote__picture">
+          <img class="quote__image" src="#" alt="">
+        </picture>
+        <q class="quote__slogan">
+          «Катайся много или мало, долго или коротко, как хочешь - но катайся»
+        </q>
+        <div class="quote__author">
+          <p class="quote__name">Эдди Меркс</p>
+          <p class="quote__occupation">Велогонщик</p>
+        </div>
+      </section>
+      <section class="surface-type-info">
+        <h2 class="surface-type-info__heading">Шоссе</h2>
+        <p class="surface-type-info__text">
+          На шоссейном велосипеде можно ездить по асфальту на разных
+          градиентах: будь то горы или равнины. Гонки проходят в командном
+          пелотоне, но тренироваться можно и самостоятельно.
+        </p>
+        <div class="surface-type-info__carousel carousel">
+          <picture class="carousel__element carouse__element_current">
+            <img class="carousel__image" src="#" alt="">
+          </picture>
+          <picture class="carousel__element">
+            <img class="carousel__image" src="#" alt="">
+          </picture>
+          <div class="carousel__control-box">
+            <button class="carousel__control carousel__control_direction_back">
+              Вперёд
+            </button>
+            <button class="carousel__control carousel__control_direction_forward">
+              Назад
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="bike-type-info">
+        <div class="bike_type-info__heading-container">
+          <h2 class="bike-type-info__heading">
+            Велосипеды
+          </h2>
+          <div class="bike-type-info__type-switch-box">
+            <button
+              class="
+                bike-type-info__type-switch
+                bike-type-info__type-switch_active
+              "
+              type="button"
+            >
+              Шоссе
+            </button>
+              <button class="bike-type-info__type-switch" type="button">
+              Грэвел
+            </button>
+            <button class="bike-type-info__type-switch" type="button">
+              ТТ
+            </button>
+          </div>
+        </div>
+        <div class="bike-type-info__card-container">
+          <article class="bike_type-info__card card">
+            <figure class="card__figure">
+              <picture class="card__picture">
+                <img class="card__image" src="#" alt="">
+              </picture>
+              <figcaption class="card__name">
+                Cervelo Caledonia-5
+              </figcaption>
+            </figure>
+          </article>
+          <article class="bike_type-info__card card">
+            <figure class="card__figure">
+              <picture class="card__picture">
+                <img class="card__image" src="#" alt="">
+              </picture>
+              <figcaption class="card__name">
+                Cannondale Systemsix Himod
+              </figcaption>
+            </figure>
+          </article>
+          <article class="bike_type-info__card card">
+            <figure class="card__figure">
+              <picture class="card__picture">
+                <img class="card__image" src="#" alt="">
+              </picture>
+              <figcaption class="card__name">
+                Trek Domane SL-7
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+      <section class="train-route-info">
+        <h2 class="train-route-info__heading">
+          Тренировки
+        </h2>
+        <picture class="train-route-info__picture">
+          <img class="train-route-info__image" src="#" alt="">
+        </picture>
+        <p class="train-route-info__text">
+          Чтобы найти маршрут для тренировки можно воспользоваться сервисом
+          Komoot, а записать эти тренировки поможет приложение Strava, а также
+          это приложение позволит построить тренировочный план.
+        </p>
+        <div class="train-route-info__links">
+          <a class="train-route-info__link" href="#" target="_blank">Strava</a>
+          <a class="train-route-info__link" href="#" target="_blank">Komoot</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <form class="footer__mailing-list-form" name="email">
+        <label class="footer__mailing-list-label" for="email_input">
+          Подпишитесь на рассылку —
+        </label>
+        <input
+          class="footer__mailing-list-input"
+          id="email_input"
+          name="email_input"
+          type="email"
+          value=""
+          placeholder="Ваш e-mail"
+          spellcheck="false"
+        >
+        <button class="form__mailing-list-submit" type="submit">
+          ok
+        </button>
+        <p class="footer__copy">&copy; Road Club 2021</p>
+        <div class="footer__theme-switch-box theme-switch-box">
+          <div
+            class="theme-switch-box__icon theme_switch-box__icon_theme_light"
+          >
+          <input class="theme-switch-box__switch" type="checkbox">
+          <div
+            class="theme-switch-box__icon theme_switch-box__icon_theme_dark"
+          >
+        </div>
+      </form>
+    </footer>
+  </body>
+</html>
