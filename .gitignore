@@ -1,0 +1,5 @@
+# ignore vim/nvim swap files
+*.sw[a-z]
+
+# ignore figma overlays
+/overlays/
