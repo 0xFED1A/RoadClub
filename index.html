@@ -128,7 +128,33 @@
       </section>
     </main>
     <footer class="footer">
-
+      <form class="footer__mailing-list-form" name="email">
+        <label class="footer__mailing-list-label" for="email_input">
+          Подпишитесь на рассылку —
+        </label>
+        <input
+          class="footer__mailing-list-input"
+          id="email_input"
+          name="email_input"
+          type="email"
+          value=""
+          placeholder="Ваш e-mail"
+          spellcheck="false"
+        >
+        <button class="form__mailing-list-submit" type="submit">
+          ok
+        </button>
+        <p class="footer__copy">&copy; Road Club 2021</p>
+        <div class="footer__theme-switch-box theme-switch-box">
+          <div
+            class="theme-switch-box__icon theme_switch-box__icon_theme_light"
+          >
+          <input class="theme-switch-box__switch" type="checkbox">
+          <div
+            class="theme-switch-box__icon theme_switch-box__icon_theme_dark"
+          >
+        </div>
+      </form>
     </footer>
   </body>
 </html>
