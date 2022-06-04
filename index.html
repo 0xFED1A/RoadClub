@@ -50,7 +50,20 @@
       </section>
       <section class="quote" aria-label="Катайся как хочешь - но катайся">
         <picture class="quote__picture">
-          <img class="quote__image" src="#" alt="">
+          <source
+            class="quote__source"
+            srcset="
+              ./images/raster/quote/1x.jpg 1x,
+              ./images/raster/quote/2x.jpg 2x,
+              ./images/raster/quote/3x.jpg 3x,
+            "
+            type="image/jpeg"
+          >
+          <img
+            class="quote__image"
+            src="./images/raster/quote/1x.jpg"
+            alt="Фотография велосипедиста въезжающего в крутой поворот"
+          >
         </picture>
         <q class="quote__slogan">
           Катайся много или мало, долго или коротко, как хочешь - но катайся
