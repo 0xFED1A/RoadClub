@@ -1,0 +1,31 @@
+//generate-fproperties
+//
+// mixin takes font family, style, and weight, then it
+// generates appropriate styles
+//
+//    @param {string} family - font family
+//    @param {string} style - font style
+//    @param {string} style - font weight
+@mixin generate-fproperties($family, $style, $weight) {
+  font: {
+    family: $family;
+    style: $style;
+    weight: generate-numeric-fweight($weight);
+  }
+}
+
+//generate-fsoruces
+//
+// mixin takes location of font and list of its formats, then
+// it generates source list using generate-fsource function
+//
+//    @param {string} dir - current location of font
+//    @param {string} formats - list of formats 
+@mixin generate-fsources($dir, $formats) {
+  $srcline: "";
+  @each $format in $formats {
+    $srcline: $srcline + generate-fsource($dir, $format) + ", ";
+  }
+  src: #{str-slice($srcline, 1, -3)};
+}
+

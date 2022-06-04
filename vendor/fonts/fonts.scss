@@ -1,0 +1,25 @@
+/* project fonts */
+
+/* Inter Regular */
+@font-face {
+  @include generate-fproperties("Inter", "normal", "regular");
+  @include generate-fsources("./Inter-Regular", $formats);
+}
+
+/* Inter Medium */
+@font-face {
+  @include generate-fproperties("Inter", "normal", "medium");
+  @include generate-fsources("./Inter-Medium", $formats);
+}
+
+/* Inter Semibold */
+@font-face {
+  @include generate-fproperties("Inter", "normal", "semibold");
+  @include generate-fsources("./Inter-Semibold", $formats);
+}
+
+/* Inter Semibold */
+@font-face {
+  @include generate-fproperties("Inter", "normal", "bold");
+  @include generate-fsources("./Inter-Bold", $formats);
+}
