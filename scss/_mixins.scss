@@ -1,4 +1,6 @@
-//generate-fproperties
+// font mixins
+
+// generate-fproperties
 //
 // mixin takes font family, style, and weight, then it
 // generates appropriate styles
@@ -14,7 +16,7 @@
   }
 }
 
-//generate-fsoruces
+// generate-fsoruces
 //
 // mixin takes location of font and list of its formats, then
 // it generates source list using generate-fsource function
