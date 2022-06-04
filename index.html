@@ -69,10 +69,36 @@
         </p>
         <div class="surface-type-info__carousel carousel">
           <picture class="carousel__element carouse__element_current">
-            <img class="carousel__image" src="#" alt="">
+            <source
+              class="carousel__source"
+              srcset="
+                ./images/raster/surface/sawtooth/1x.jpg 1x,
+                ./images/raster/surface/sawtooth/2x.jpg 2x,
+                ./images/raster/surface/sawtooth/3x.jpg 3x,
+              "
+              type="image/jpeg"
+            >
+            <img
+              class="carousel__image"
+              src="./images/raster/surface/sawtooth/1x.jpg"
+              alt="Фотография поворота на горном шоссе"
+            >
           </picture>
           <picture class="carousel__element">
-            <img class="carousel__image" src="#" alt="">
+            <source
+              class="carousel__source"
+              srcset="
+                ./images/raster/surface/curvy/1x.jpg 1x,
+                ./images/raster/surface/curvy/2x.jpg 2x,
+                ./images/raster/surface/curvy/3x.jpg 3x,
+              "
+              type="image/jpeg"
+            >
+            <img
+              class="carousel__image"
+              src="./images/raster/surface/curvy/1x.jpg"
+              alt="Фотография велосипедиста на лесной тропинке"
+            >
           </picture>
           <div class="carousel__control-box">
             <button
