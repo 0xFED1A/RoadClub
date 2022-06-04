@@ -1,3 +1,5 @@
+// font functions
+
 // generate-numeric-fweight
 //
 // function takes text representation of font weight and
@@ -29,7 +31,7 @@
   @return $weightval;
 }
 
-//generate-fsoruce
+// generate-fsoruce
 //
 // function takes location of font and its format, then
 // it generates font source
