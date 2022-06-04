@@ -41,7 +41,20 @@
         <a class="cta-promotion__button" href="#">Подробнее</a>
         <figure class="cta-promotion__bike-figure bike-figure">
           <picture class="bike-figure__picture">
-            <img class="bike-figure__image" src="#" alt="">
+            <source
+              class="bike-figure__source"
+              srcset="
+                ./images/raster/bikes/systemix-himod/1x.jpg 1x,
+                ./images/raster/bikes/systemix-himod/2x.jpg 2x,
+                ./images/raster/bikes/systemix-himod/3x.jpg 3x,
+              "
+              type="image/jpeg"
+            >
+            <img
+              class="bike-figure__image"
+              src="./images/raster/bikes/systemix-himod/1x.jpg"
+              alt="Шоссейный велосипед Cannondale Systemsix"
+            >
           </picture>
           <figcaption class="bike-figure__caption">
             Cannondale Systemsix
