@@ -358,7 +358,6 @@ template {
   width: 100%;
   padding: 28px 120px;
   align-self: flex-end;
-  box-sizing: border-box;
   /* rules for nav__links element */
   /* rules for nav__link element */
 }
@@ -374,9 +373,16 @@ template {
   text-decoration: none;
   line-height: 18px;
   color: #151515;
+  /* rules for nav__link_darkened modifier */
 }
 .header__nav-link:hover {
   color: rgba(21, 21, 21, 0.75);
+}
+.header__nav-link_darkened {
+  color: #fff;
+}
+.header__nav-link_darkened:hover {
+  color: rgba(255, 255, 255, 0.65);
 }
 
 /*# sourceMappingURL=index.css.map */
