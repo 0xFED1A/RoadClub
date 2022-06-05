@@ -1,0 +1,31 @@
+/* rules for header block */
+
+.header {
+  width: 100%;
+  padding: 28px 120px;
+  align-self: flex-end;
+  box-sizing: border-box;
+
+  &__nav-links {
+    text-align: right;
+  }
+
+  &__nav-link {
+    margin: 0 34px 0 0;
+    font: {
+      size: 14px;
+      weight: generate-numeric-fweight("medium");
+    }
+    text-decoration: none;
+    line-height: 18px;
+    color: $c_accent;
+  }
+
+  &__nav-link:last-of-type {
+    margin: 0;
+  }
+
+  &__nav-link:hover {
+    color: rgba($c_accent, $o_header_hov);
+  }
+}

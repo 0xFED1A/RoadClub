@@ -353,4 +353,29 @@ template {
   flex-direction: column;
 }
 
+/* rules for header block */
+.header {
+  width: 100%;
+  padding: 28px 120px;
+  align-self: flex-end;
+  box-sizing: border-box;
+}
+.header__nav-links {
+  text-align: right;
+}
+.header__nav-link {
+  margin: 0 34px 0 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 18px;
+  color: #151515;
+}
+.header__nav-link:last-of-type {
+  margin: 0;
+}
+.header__nav-link:hover {
+  color: rgba(21, 21, 21, 0.75);
+}
+
 /*# sourceMappingURL=index.css.map */
