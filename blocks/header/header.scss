@@ -6,12 +6,16 @@
   align-self: flex-end;
   box-sizing: border-box;
 
+  /* rules for nav__links element */
   &__nav-links {
-    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    column-gap: 34px;
   }
 
+  /* rules for nav__link element */
   &__nav-link {
-    margin: 0 34px 0 0;
     font: {
       size: 14px;
       weight: generate-numeric-fweight("medium");
@@ -19,10 +23,6 @@
     text-decoration: none;
     line-height: 18px;
     color: $c_accent;
-  }
-
-  &__nav-link:last-of-type {
-    margin: 0;
   }
 
   &__nav-link:hover {
