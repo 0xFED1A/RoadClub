@@ -3,23 +3,23 @@
 /* Inter Regular */
 @font-face {
   @include generate-fproperties("Inter", "normal", "regular");
-  @include generate-fsources("./Inter-Regular", $formats);
+  @include generate-fsources("../vendor/fonts/Inter-Regular", $formats);
 }
 
 /* Inter Medium */
 @font-face {
   @include generate-fproperties("Inter", "normal", "medium");
-  @include generate-fsources("./Inter-Medium", $formats);
+  @include generate-fsources("../vendor/fonts/Inter-Medium", $formats);
 }
 
 /* Inter Semibold */
 @font-face {
   @include generate-fproperties("Inter", "normal", "semibold");
-  @include generate-fsources("./Inter-Semibold", $formats);
+  @include generate-fsources("../vendor/fonts/Inter-Semibold", $formats);
 }
 
 /* Inter Semibold */
 @font-face {
   @include generate-fproperties("Inter", "normal", "bold");
-  @include generate-fsources("./Inter-Bold", $formats);
+  @include generate-fsources("../vendor/fonts/Inter-Bold", $formats);
 }
