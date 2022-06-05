@@ -1,2 +1,41 @@
 // font variables
 $formats: "woff", "woff2";
+
+// color variables
+$c_button_base: #24b47e;
+$c_button_accent: #319e75;
+$c_button_text: #fff;
+
+// light theme colors
+$c_page-bg: #f4f4f4;
+$c_accent: #151515;
+$c_text: #222;
+$c_carousel-ctrl: #ebebeb;
+$c_input: #c7c7c7;
+
+// dark theme colors
+$c_page-bg_dark: #333;
+$c_accent_dark: #fff;
+$c_text_dark: #e5e5e5;
+$c_carousel-ctrl_dark: #434343;
+$c_input_dark: #7d7d7d;
+
+// light theme opacity
+$o_header: 1;
+$o_header_hov: 0.75;
+$o_bike-link: 0.7;
+$o_bike-link_hov: 0.6;
+$o_bike-link_curr: 1;
+$o_bike-link_curr_hov: 0.75;
+$o_app-link: 1;
+$o_app-link_hov: 0.75;
+
+// dark theme opacity
+$o_header_dark: 1;
+$o_header_hov_dark: 0.65;
+$o_bike-link_dark: 0.7;
+$o_bike-link_hov_dark: 0.5;
+$o_bike-link_curr_dark: 1;
+$o_bike-link_curr_hov_dark: 0.65;
+$o_app-link_dark: 1;
+$o_app-link_hov_dark: 0.65;
