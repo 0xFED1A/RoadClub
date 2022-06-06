@@ -484,21 +484,24 @@ template {
 }
 .cta-promotion__bike-picture {
   position: sticky;
-  top: 200px;
-  padding-bottom: 100px;
+  top: 20%;
+  padding-bottom: 20%;
 }
 .cta-promotion__bike-picture::before {
   content: "";
-  width: 100%;
-  height: 300px;
 }
 
 .bike-picture__image {
+  max-width: 340px;
+  max-height: 260px;
+  width: 23.7vw;
+  height: 18.7vw;
+  object-fit: cover;
   background-color: #f4f4f4;
-  padding: 20px 50px;
+  padding: 4% 15%;
   border-radius: 20px;
   position: relative;
-  right: 250px;
+  right: 14vw;
   box-shadow: -20px 60px 200px 0 rgba(0, 0, 0, 0.2);
 }
 
