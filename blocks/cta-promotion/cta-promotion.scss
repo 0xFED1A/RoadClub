@@ -27,6 +27,11 @@
     letter-spacing: -0.5px;
     color: $c_accent;
     grid-area: heading;
+
+    /* rules for cta-promotion__heading_darkened modifier */
+    &_darkened {
+      color: $c_accent_dark;
+    }
   }
 
   /* rules for cta-promotion__text element */
@@ -38,8 +43,13 @@
       weight: generate-numeric-fweight("regular");
     }
     line-height: 28px;
-    color: rgba($c_text, .7);
+    color: rgba($c_text, 0.7);
     grid-area: text;
+
+    /* rules for cta-promotion__text_darkened modifier */
+    &_darkened {
+      color: rgba($c_accent_dark, 0.7);
+    }
   }
 
   /* rules for cta-promotion__button element */
@@ -67,6 +77,11 @@
     color: $c_accent;
     align-self: center;
     grid-area: caption;
+
+    /* rules for cta-promotion__bike-picture-caption_darkened modifier */
+    &_darkened {
+      color: $c_accent_dark;
+    }
   }
 
   /* rules for cta-promotion__bike-picture-container element */

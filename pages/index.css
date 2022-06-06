@@ -20,7 +20,7 @@
   font-weight: 600;
   src: url("../vendor/fonts/Inter-Semibold.woff") format("woff"), url("../vendor/fonts/Inter-Semibold.woff2") format("woff2");
 }
-/* Inter Semibold */
+/* Inter Bold */
 @font-face {
   font-family: "Inter";
   font-style: "normal";
@@ -415,6 +415,10 @@ template {
   letter-spacing: -0.5px;
   color: #151515;
   grid-area: heading;
+  /* rules for cta-promotion__heading_darkened modifier */
+}
+.cta-promotion__heading_darkened {
+  color: #fff;
 }
 .cta-promotion__text {
   max-width: 460px;
@@ -424,6 +428,10 @@ template {
   line-height: 28px;
   color: rgba(34, 34, 34, 0.7);
   grid-area: text;
+  /* rules for cta-promotion__text_darkened modifier */
+}
+.cta-promotion__text_darkened {
+  color: rgba(255, 255, 255, 0.7);
 }
 .cta-promotion__button {
   margin: 0;
@@ -445,6 +453,10 @@ template {
   color: #151515;
   align-self: center;
   grid-area: caption;
+  /* rules for cta-promotion__bike-picture-caption_darkened modifier */
+}
+.cta-promotion__bike-picture-caption_darkened {
+  color: #fff;
 }
 .cta-promotion__bike-picture-container {
   max-width: 610px;
