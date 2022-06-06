@@ -474,4 +474,29 @@ template {
   display: none;
 }
 
+/* rules for quote block */
+.quote {
+  display: none;
+}
+
+/* rules for surface-type-info block */
+.surface-type-info {
+  display: none;
+}
+
+/* rules for bike-type-info block */
+.bike-type-info {
+  display: none;
+}
+
+/* rules for train-route-info */
+.train-route-info {
+  display: none;
+}
+
+/* rules for footer block */
+.footer {
+  display: none;
+}
+
 /*# sourceMappingURL=index.css.map */
