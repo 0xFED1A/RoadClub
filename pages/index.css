@@ -552,7 +552,117 @@ template {
 
 /* rules for surface-type-info block */
 .surface-type-info {
-  display: none;
+  padding: 120px 0 0 120px;
+  box-sizing: border-box;
+  /* rules for surface-type-info__heading element */
+  /* rules for surface-type-info__text element */
+}
+.surface-type-info__heading {
+  max-width: 460px;
+  margin: 0;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: #151515;
+  /* rules for surface-type-info_heading_darkened modifier */
+}
+.surface-type-info__heading_darkened {
+  color: #fff;
+}
+.surface-type-info__text {
+  max-width: 460px;
+  margin: 50px 0 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(34, 34, 34, 0.7);
+  /* rules for cta-promotion__text_darkened modifier */
+}
+.surface-type-info__text_darkened {
+  color: rgba(255, 255, 255, 0.7);
+}
+.surface-type-info__carousel {
+  margin: 80px 0 0 0;
+}
+
+/* rules for carousel block */
+.carousel {
+  display: grid;
+  grid-template-areas: "carousel-current carousel-next" "carousel-controls .";
+  column-gap: 40px;
+  row-gap: 50px;
+  grid-template-columns: repeat(2, minmax(45.14%, 650px));
+  grid-template-rows: auto 50px;
+  overflow: hidden;
+  /* rules for carousel__element element */
+  /* rules for carouse__image element */
+  /* rules for carousel__control-box element */
+  /* rules for carousel__control element */
+}
+.carousel__element {
+  position: relative;
+  /* rules for carousel__element_current modifier */
+}
+.carousel__element_current::before {
+  content: "";
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  z-index: 1;
+  background-image: url("../images/vector/surface-type/surface-type_base.svg");
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.carousel__element_current::after {
+  content: "";
+  width: 50px;
+  height: 16px;
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  z-index: 2;
+  background-image: url("../images/vector/surface-type/surface-type_sawtooth.svg");
+}
+.carousel__image {
+  max-width: 100%;
+}
+.carousel__control-box {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.carousel__control {
+  width: 50px;
+  height: 50px;
+  background-color: #ebebeb;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  appearance: none;
+  border: none;
+  border-radius: 100%;
+  position: relative;
+  cursor: pointer;
+  /* rules for carousel__control_direction_back modifier */
+}
+.carousel__control:hover {
+  opacity: 75%;
+}
+.carousel__control::before {
+  width: 7px;
+  height: 16px;
+  content: "";
+  position: absolute;
+  top: 16.5px;
+  left: 19.3px;
+  background-image: url("../images/vector/carousel-control/carousel-control_control_ligth.svg");
+}
+.carousel__control_direction_forward::before {
+  transform: scaleX(-1) translateX(-5.3px);
 }
 
 /* rules for bike-type-info block */
