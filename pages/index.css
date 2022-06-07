@@ -667,7 +667,54 @@ template {
 
 /* rules for bike-type-info block */
 .bike-type-info {
-  display: none;
+  padding: 120px 120px 60px 120px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.bike-type-info__heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.bike-type-info__heading {
+  max-width: 460px;
+  margin: 0;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: #151515;
+}
+.bike-type-info__type-switch-box {
+  display: flex;
+  column-gap: 40px;
+}
+.bike-type-info__card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.bike-type-info__type-switch {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: rgba(34, 34, 34, 0.7);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  appearance: none;
+}
+.bike-type-info__type-switch:hover {
+  color: rgba(34, 34, 34, 0.6);
+}
+.bike-type-info__type-switch_active {
+  color: #151515;
+}
+.bike-type-info__type-switch_active:hover {
+  color: rgba(21, 21, 21, 0.75);
 }
 
 /* rules for train-route-info */
