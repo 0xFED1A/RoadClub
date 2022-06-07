@@ -1,0 +1,52 @@
+/* rules for quote block */
+
+.quote {
+  padding: 120px 120px 60px 120px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+    "picture quote"
+    "picture author";
+  column-gap: 80px;
+  grid-template-columns: 45.14% minmax(min-content, max-content);
+  row-gap: 0;
+
+  &__picture {
+    grid-area: picture;
+  }
+
+  &__image {
+    max-width:100%;
+  }
+
+  &__slogan {
+    max-width: 470px;
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: generate-numeric-fweight("semibold");
+    letter-spacing: -0.5px;
+    quotes:"" "";
+    color: $c_accent;
+    grid-area: quote;
+  }
+
+  &__author {
+    grid-area: author;
+    align-self: end;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: generate-numeric-fweight("medium");
+    color: $c_accent;
+  }
+
+  &__occupation {
+    margin: 6px 0 0 0;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba($c_text, 0.7);
+  }
+}

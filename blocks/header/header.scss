@@ -1,0 +1,39 @@
+/* rules for header block */
+
+.header {
+  width: 100%;
+  padding: 28px 120px;
+  align-self: flex-end;
+
+  /* rules for nav__links element */
+  &__nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    column-gap: 34px;
+  }
+
+  /* rules for nav__link element */
+  &__nav-link {
+    font: {
+      size: 14px;
+      weight: generate-numeric-fweight("medium");
+    }
+    text-decoration: none;
+    line-height: 18px;
+    color: $c_accent;
+
+    &:hover {
+      color: rgba($c_accent, $o_header_hov);
+    }
+
+    /* rules for nav__link_darkened modifier */
+    &_darkened {
+      color: $c_accent_dark
+    }
+
+    &_darkened:hover {
+      color: rgba($c_accent_dark, $o_header_hov_dark);
+    }
+  }
+}

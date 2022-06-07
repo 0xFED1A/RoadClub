@@ -1,0 +1,141 @@
+/* rules for cta-promotion block */
+
+.cta-promotion {
+  padding-left: 120px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+    "heading picture"
+    "text picture"
+    "button picture"
+    "caption picture";
+  grid-template-columns: 53.8% 47.45%;
+  grid-template-rows: repeat(3, auto) 1fr;
+  grid-auto-flow: row;
+  row-gap: 50px;
+
+
+  /* rules for cta-promotion__heading element */
+  &__heading {
+    max-width: 460px;
+    margin: 80px 0 0 0;
+    font: {
+      size: 55px;
+      weight: generate-numeric-fweight("bold");
+    }
+    line-height: 60px;
+    letter-spacing: -0.5px;
+    color: $c_accent;
+    grid-area: heading;
+
+    /* rules for cta-promotion__heading_darkened modifier */
+    &_darkened {
+      color: $c_accent_dark;
+    }
+  }
+
+  /* rules for cta-promotion__text element */
+  &__text {
+    max-width: 460px;
+    margin: 0;
+    font: {
+      size: 18px;
+      weight: generate-numeric-fweight("regular");
+    }
+    line-height: 28px;
+    color: rgba($c_text, 0.7);
+    grid-area: text;
+
+    /* rules for cta-promotion__text_darkened modifier */
+    &_darkened {
+      color: rgba($c_accent_dark, 0.7);
+    }
+  }
+
+  /* rules for cta-promotion__button element */
+  &__button {
+    margin: 0;
+    max-width: 180px;
+    padding: 16px 10px;
+    background-color: $c_button_base;
+    color: $c_button_text;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    grid-area: button;
+  }
+
+  /* rules for cta-promotion__bike-picture-caption element */
+  &__bike-picture-caption {
+    margin: 0 0 90px 0;
+    font: {
+      size: 18px;
+      weight: generate-numeric-fweight("regular");
+    }
+    line-height: 18px;
+    color: $c_accent;
+    align-self: center;
+    grid-area: caption;
+
+    /* rules for cta-promotion__bike-picture-caption_darkened modifier */
+    &_darkened {
+      color: $c_accent_dark;
+    }
+  }
+
+  /* rules for cta-promotion__bike-picture-container element */
+  &__bike-picture-container {
+    max-width: 610px;
+    max-height: 836px;
+    margin: 20px 0 0 0;
+    background: {
+      size: contain;
+      repeat: no-repeat;
+      image: url("../images/raster/cta/1x.jpg");
+      origin: border-box;
+      position: right top;
+    }
+    grid-area: picture;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      float: left;
+      height: 0;
+      padding-top: calc(836px / 610px * 100%);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  /* rules for .cta-promotion__bike-picture-caption element */
+  &__bike-picture {
+    position: sticky;
+    top: 20%;
+    padding-bottom: 20%;
+
+    &::before {
+      content: "";
+    }
+  }
+}
+
+.bike-picture__image {
+    max-width: 340px;
+    max-height: 260px;
+    width: 23.7vw;
+    height: 18.7vw;
+    object-fit: cover;
+    background-color: $c_page-bg; 
+    padding: 4% 15%;
+    border-radius: 20px;
+    position: relative;
+    right: 14vw;
+    box-shadow: -20px 60px 200px 0 rgba(#000, 0.2);
+}
