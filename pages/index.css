@@ -507,7 +507,46 @@ template {
 
 /* rules for quote block */
 .quote {
-  display: none;
+  padding: 120px 120px 60px 120px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "picture quote" "picture author";
+  column-gap: 80px;
+  grid-template-columns: 45.14% minmax(min-content, max-content);
+  row-gap: 0;
+}
+.quote__picture {
+  grid-area: picture;
+}
+.quote__image {
+  max-width: 100%;
+}
+.quote__slogan {
+  max-width: 470px;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  quotes: "" "";
+  color: #151515;
+  grid-area: quote;
+}
+.quote__author {
+  grid-area: author;
+  align-self: end;
+}
+.quote__name {
+  margin: 0;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #151515;
+}
+.quote__occupation {
+  margin: 6px 0 0 0;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(34, 34, 34, 0.7);
 }
 
 /* rules for surface-type-info block */
