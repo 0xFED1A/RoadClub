@@ -1,7 +1,7 @@
 /* rules for cta-promotion block */
 
 .cta-promotion {
-  padding-left: 120px;
+  padding-left: $p_section_padding;
   box-sizing: border-box;
   display: grid;
   grid-template-areas:

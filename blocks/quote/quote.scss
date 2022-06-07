@@ -1,7 +1,7 @@
 /* rules for quote block */
 
 .quote {
-  padding: 120px 120px 60px 120px;
+  padding: $p_section_padding $p_section_padding 0 $p_section_padding;
   box-sizing: border-box;
   display: grid;
   grid-template-areas:
