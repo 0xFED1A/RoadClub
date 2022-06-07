@@ -1,0 +1,33 @@
+/* rules for change-picture block */
+
+@keyframes change-picture {
+  from {
+    content: url("../images/raster/bikes/aspero-grx810/1x.jpg");
+  }
+
+  50% {
+    content: url("../images/raster/bikes/caledonia/1x.jpg");
+  }
+
+  to {
+    content: url("../images/raster/bikes/domane-sl7/1x.jpg");
+  }
+}
+
+.change-picture {
+  animation: change-picture 1s linear infinite;
+}
+
+@keyframes change-name {
+  from {
+    content: "Cervelo Aspero GRX 810";
+  }
+
+  50%  {
+    content: "Cervelo Caledonia-5";
+  }
+
+  to {
+    content: "Trek Domane SL-7";
+  }
+}

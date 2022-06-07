@@ -78,6 +78,11 @@
     align-self: center;
     grid-area: caption;
 
+    &::after {
+      content: "";
+      animation: change-name 1s linear infinite;
+    }
+
     /* rules for cta-promotion__bike-picture-caption_darkened modifier */
     &_darkened {
       color: $c_accent_dark;
