@@ -404,7 +404,6 @@ template {
   /* rules for cta-promotion__button element */
   /* rules for cta-promotion__bike-picture-caption element */
   /* rules for cta-promotion__bike-picture-container element */
-  /* rules for .cta-promotion__bike-picture-caption element */
 }
 .cta-promotion__heading {
   max-width: 460px;
@@ -482,15 +481,17 @@ template {
   display: block;
   clear: both;
 }
-.cta-promotion__bike-picture {
+
+/* rules for bike picture block */
+.bike-picture {
   position: sticky;
   top: 20%;
   padding-bottom: 20%;
+  /* rules for bike-picture__image element */
 }
-.cta-promotion__bike-picture::before {
+.bike-picture::before {
   content: "";
 }
-
 .bike-picture__image {
   max-width: 340px;
   max-height: 260px;
@@ -507,7 +508,7 @@ template {
 
 /* rules for quote block */
 .quote {
-  padding: 120px 120px 60px 120px;
+  padding: 120px 120px 0 120px;
   box-sizing: border-box;
   display: grid;
   grid-template-areas: "picture quote" "picture author";
