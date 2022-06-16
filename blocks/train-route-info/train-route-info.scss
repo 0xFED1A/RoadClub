@@ -1,5 +1,76 @@
 /* rules for train-route-info */
 
 .train-route-info {
-  display: none;
+  box-sizing: border-box;
+  padding: $p_section_padding;
+  margin: 30px 0 0 0;
+
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) 48.3%;
+  grid-template-areas:
+    "heading picture"
+    "text picture"
+    "links picture";
+  column-gap: 160px;
+
+  &__heading {
+    max-width: 460px;
+    margin: 0;
+    font: {
+      size: 55px;
+      weight: generate-numeric-fweight("bold");
+    }
+    line-height: 60px;
+    letter-spacing: -0.5px;
+    color: $c_accent;
+    grid-area: heading;
+  }
+
+  &__picture {
+    max-width: 100%;
+    grid-area: picture;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__text {
+    max-width: 460px;
+    /* change figma value of margin from 50px to 40px for pixelperfectness */
+    margin: 40px 0 0 0;
+    font: {
+      size: 18px;
+      weight: generate-numeric-fweight("regular");
+    }
+    line-height: 28px;
+    color: rgba($c_text, 0.7);
+
+    /* rules for cta-promotion__text_darkened modifier */
+    &_darkened {
+      color: rgba($c_accent_dark, 0.7);
+    }
+    grid-area: text;
+  }
+
+  &__links {
+    margin: 182px 0 0 0;
+    grid-area: links;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 28px;
+    color: $c_accent;
+    font-weight: generate-numeric-fweight("semibold");
+    text-decoration: none;
+  }
+
+  &__link:last-child {
+    margin-left: 25px;
+  }
+
+  &__link:hover {
+    color: rgba($c_accent, $o_app-link_hov);
+  }
 }

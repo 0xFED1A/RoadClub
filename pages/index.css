@@ -20,7 +20,7 @@
   font-weight: 600;
   src: url("../vendor/fonts/Inter-Semibold.woff") format("woff"), url("../vendor/fonts/Inter-Semibold.woff2") format("woff2");
 }
-/* Inter Semibold */
+/* Inter Bold */
 @font-face {
   font-family: "Inter";
   font-style: "normal";
@@ -404,7 +404,6 @@ template {
   /* rules for cta-promotion__button element */
   /* rules for cta-promotion__bike-picture-caption element */
   /* rules for cta-promotion__bike-picture-container element */
-  /* rules for .cta-promotion__bike-picture-caption element */
 }
 .cta-promotion__heading {
   max-width: 460px;
@@ -415,6 +414,10 @@ template {
   letter-spacing: -0.5px;
   color: #151515;
   grid-area: heading;
+  /* rules for cta-promotion__heading_darkened modifier */
+}
+.cta-promotion__heading_darkened {
+  color: #fff;
 }
 .cta-promotion__text {
   max-width: 460px;
@@ -424,6 +427,10 @@ template {
   line-height: 28px;
   color: rgba(34, 34, 34, 0.7);
   grid-area: text;
+  /* rules for cta-promotion__text_darkened modifier */
+}
+.cta-promotion__text_darkened {
+  color: rgba(255, 255, 255, 0.7);
 }
 .cta-promotion__button {
   margin: 0;
@@ -445,20 +452,352 @@ template {
   color: #151515;
   align-self: center;
   grid-area: caption;
+  /* rules for cta-promotion__bike-picture-caption_darkened modifier */
+}
+.cta-promotion__bike-picture-caption_darkened {
+  color: #fff;
 }
 .cta-promotion__bike-picture-container {
   max-width: 610px;
-  max-height: 834px;
-  height: 0;
-  padding-top: 136.7213114754%;
+  max-height: 836px;
+  margin: 20px 0 0 0;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../images/raster/cta/1x.jpg");
   background-origin: border-box;
-  background-position: right top 20px;
+  background-position: right top;
+  grid-area: picture;
+  display: flex;
+  align-items: center;
+}
+.cta-promotion__bike-picture-container::before {
+  content: "";
+  float: left;
+  height: 0;
+  padding-top: 137.0491803279%;
+}
+.cta-promotion__bike-picture-container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* rules for bike picture block */
+.bike-picture {
+  position: sticky;
+  top: 20%;
+  padding-bottom: 20%;
+  /* rules for bike-picture__image element */
+}
+.bike-picture::before {
+  content: "";
+}
+.bike-picture__image {
+  max-width: 340px;
+  max-height: 260px;
+  width: 23.7vw;
+  height: 18.7vw;
+  object-fit: cover;
+  background-color: #f4f4f4;
+  padding: 4% 15%;
+  border-radius: 20px;
+  position: relative;
+  right: 14vw;
+  box-shadow: -20px 60px 200px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* rules for quote block */
+.quote {
+  padding: 120px 120px 0 120px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "picture quote" "picture author";
+  column-gap: 80px;
+  grid-template-columns: 54.14% minmax(min-content, max-content);
+  row-gap: 0;
+}
+.quote__picture {
   grid-area: picture;
 }
-.cta-promotion__bike-picture {
+.quote__image {
+  max-width: 100%;
+}
+.quote__slogan {
+  max-width: 470px;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  quotes: "" "";
+  color: #151515;
+  grid-area: quote;
+}
+.quote__author {
+  grid-area: author;
+  align-self: end;
+}
+.quote__name {
+  margin: 0;
+  font-size: 20px;
+  /* swap figma line-height 32 to 20 value for pixelperfect */
+  line-height: 20px;
+  font-weight: 500;
+  color: #151515;
+}
+.quote__occupation {
+  margin: 8px 0 0 0;
+  font-size: 16px;
+  /* swap figma line-height 28 to 40 value for pixelperfect */
+  line-height: 40px;
+  color: rgba(34, 34, 34, 0.7);
+}
+
+/* rules for surface-type-info block */
+.surface-type-info {
+  padding: 120px 0 0 120px;
+  box-sizing: border-box;
+  /* rules for surface-type-info__heading element */
+  /* rules for surface-type-info__text element */
+}
+.surface-type-info__heading {
+  max-width: 460px;
+  margin: 0;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: #151515;
+  /* rules for surface-type-info_heading_darkened modifier */
+}
+.surface-type-info__heading_darkened {
+  color: #fff;
+}
+.surface-type-info__text {
+  max-width: 460px;
+  /* change figma value of margin from 50px to 47px for pixelperfectness */
+  margin: 47px 0 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(34, 34, 34, 0.7);
+  /* rules for cta-promotion__text_darkened modifier */
+}
+.surface-type-info__text_darkened {
+  color: rgba(255, 255, 255, 0.7);
+}
+.surface-type-info__carousel {
+  margin: 80px 0 0 0;
+}
+
+/* rules for carousel block */
+.carousel {
+  display: grid;
+  grid-template-areas: "carousel-current carousel-next" "carousel-controls .";
+  column-gap: 40px;
+  row-gap: 50px;
+  grid-template-columns: repeat(2, minmax(49.14%, 650px));
+  grid-template-rows: auto 50px;
+  overflow: hidden;
+  /* rules for carousel__element element */
+  /* rules for carouse__image element */
+  /* rules for carousel__control-box element */
+  /* rules for carousel__control element */
+}
+.carousel__element {
+  position: relative;
+  /* rules for carousel__element_current modifier */
+}
+.carousel__element_current::before {
+  content: "";
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  z-index: 1;
+  background-image: url("../images/vector/surface-type/surface-type_base.svg");
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.carousel__element_current::after {
+  content: "";
+  width: 50px;
+  height: 16px;
+  position: absolute;
+  bottom: 28px;
+  left: 16px;
+  z-index: 2;
+  background-image: url("../images/vector/surface-type/surface-type_sawtooth.svg");
+}
+.carousel__image {
+  max-width: 100%;
+}
+.carousel__control-box {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.carousel__control {
+  width: 50px;
+  height: 50px;
+  background-color: #ebebeb;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  appearance: none;
+  border: none;
+  border-radius: 100%;
+  position: relative;
+  cursor: pointer;
+  /* rules for carousel__control_direction_back modifier */
+}
+.carousel__control:hover {
+  opacity: 75%;
+}
+.carousel__control::before {
+  width: 7px;
+  height: 16px;
+  content: "";
+  position: absolute;
+  top: 16.5px;
+  left: 19.3px;
+  background-image: url("../images/vector/carousel-control/carousel-control_control_ligth.svg");
+}
+.carousel__control_direction_forward::before {
+  transform: scaleX(-1) translateX(-5.3px);
+}
+
+/* rules for bike-type-info block */
+.bike-type-info {
+  padding: 120px 120px 60px 120px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.bike-type-info__heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.bike-type-info__heading {
+  max-width: 460px;
+  margin: 0;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: #151515;
+}
+.bike-type-info__type-switch-box {
+  display: flex;
+  column-gap: 40px;
+}
+.bike-type-info__card-container {
+  margin: 120px 0 0 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.bike-type-info__type-switch {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: rgba(34, 34, 34, 0.7);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  appearance: none;
+}
+.bike-type-info__type-switch:hover {
+  color: rgba(34, 34, 34, 0.6);
+}
+.bike-type-info__type-switch_active {
+  color: #151515;
+}
+.bike-type-info__type-switch_active:hover {
+  color: rgba(21, 21, 21, 0.75);
+}
+
+.card__figure {
+  margin: 0;
+  padding: 0;
+}
+.card__image {
+  margin: 20px;
+  border-radius: 20px;
+}
+.card__name {
+  /* swap fimga margin value 20px to 15px, 8px for piexeperfectness */
+  margin: 15px 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+/* rules for train-route-info */
+.train-route-info {
+  box-sizing: border-box;
+  padding: 120px;
+  margin: 30px 0 0 0;
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) 48.3%;
+  grid-template-areas: "heading picture" "text picture" "links picture";
+  column-gap: 160px;
+}
+.train-route-info__heading {
+  max-width: 460px;
+  margin: 0;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: #151515;
+  grid-area: heading;
+}
+.train-route-info__picture {
+  max-width: 100%;
+  grid-area: picture;
+}
+.train-route-info__image {
+  width: 100%;
+}
+.train-route-info__text {
+  max-width: 460px;
+  /* change figma value of margin from 50px to 40px for pixelperfectness */
+  margin: 40px 0 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(34, 34, 34, 0.7);
+  /* rules for cta-promotion__text_darkened modifier */
+  grid-area: text;
+}
+.train-route-info__text_darkened {
+  color: rgba(255, 255, 255, 0.7);
+}
+.train-route-info__links {
+  margin: 182px 0 0 0;
+  grid-area: links;
+}
+.train-route-info__link {
+  font-size: 18px;
+  line-height: 28px;
+  color: #151515;
+  font-weight: 600;
+  text-decoration: none;
+}
+.train-route-info__link:last-child {
+  margin-left: 25px;
+}
+.train-route-info__link:hover {
+  color: rgba(21, 21, 21, 0.75);
+}
+
+/* rules for footer block */
+.footer {
   display: none;
 }
 

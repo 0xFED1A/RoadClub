@@ -1,5 +1,87 @@
 /* rules for bike-type-info block */
 
 .bike-type-info {
-  display: none;
+  padding: $p_section_padding  $p_section_padding
+    calc($p_section_padding / 2) $p_section_padding;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  &__heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__heading {
+    max-width: 460px;
+    margin: 0;
+    font: {
+      size: 55px;
+      weight: generate-numeric-fweight("bold");
+    }
+    line-height: 60px;
+    letter-spacing: -0.5px;
+    color: $c_accent;
+  }
+
+  &__type-switch-box {
+    display: flex;
+    column-gap: 40px;
+  }
+
+  &__card-container {
+    margin: $p_section_padding 0 0 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+
+  &__type-switch {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: generate-numeric-fweight("semibold");
+    color: rgba($c_text, $o_bike_link);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    appearance: none;
+
+    &:hover {
+      color: rgba($c_text,$o_bike_link_hov);
+    }
+    
+    &_active {
+      color: rgba($c_accent, $o_bike_link_curr);
+
+      &:hover {
+        color: rgba($c_accent, $o_bike_link_curr_hov);
+      }
+    }
+  }
+}
+
+.card {
+
+  &__figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__image {
+    margin: 20px;
+    border-radius: 20px;
+  }
+
+  &__name {
+    /* swap fimga margin value 20px to 15px, 8px for piexeperfectness */
+    margin: 15px 0 0 8px;
+    font: {
+      size: 18px;
+      weight: generate-numeric-fweight("semibold");
+    }
+    line-height: 22px;
+  }
 }
