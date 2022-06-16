@@ -1,5 +1,8 @@
 /* rules for footer block */
 
 .footer {
-  display: none;
+  box-sizing: border-box;
+  padding: 80px 120px 60px 120px;
+  background-color: $c_footer-bg;
+
 }
