@@ -34,4 +34,22 @@
   &__image {
     width: 100%;
   }
+
+  &__text {
+    max-width: 460px;
+    /* change figma value of margin from 50px to 40px for pixelperfectness */
+    margin: 40px 0 0 0;
+    font: {
+      size: 18px;
+      weight: generate-numeric-fweight("regular");
+    }
+    line-height: 28px;
+    color: rgba($c_text, 0.7);
+
+    /* rules for cta-promotion__text_darkened modifier */
+    &_darkened {
+      color: rgba($c_accent_dark, 0.7);
+    }
+    grid-area: text;
+  }
 }
