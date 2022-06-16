@@ -87,4 +87,8 @@
     grid-area: copy;
     color: $c_footer-copy;
   }
+
+  &__theme-switch-box {
+    grid-area: theme-switch;
+  }
 }
