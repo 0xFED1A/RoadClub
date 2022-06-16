@@ -52,4 +52,25 @@
     }
     grid-area: text;
   }
+
+  &__links {
+    margin: 182px 0 0 0;
+    grid-area: links;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 28px;
+    color: $c_accent;
+    font-weight: generate-numeric-fweight("semibold");
+    text-decoration: none;
+  }
+
+  &__link:last-child {
+    margin-left: 25px;
+  }
+
+  &__link:hover {
+    color: rgba($c_accent, $o_app-link_hov);
+  }
 }
