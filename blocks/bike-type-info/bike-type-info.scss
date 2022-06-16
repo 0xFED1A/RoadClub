@@ -74,4 +74,14 @@
     margin: 20px;
     border-radius: 20px;
   }
+
+  &__name {
+    /* swap fimga margin value 20px to 15px, 8px for piexeperfectness */
+    margin: 15px 0 0 8px;
+    font: {
+      size: 18px;
+      weight: generate-numeric-fweight("semibold");
+    }
+    line-height: 22px;
+  }
 }
