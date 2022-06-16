@@ -15,7 +15,7 @@
 /* Inter Semibold */
 @font-face {
   @include generate-fproperties("Inter", "normal", "semibold");
-  @include generate-fsources("../vendor/fonts/Inter-Semibold", $formats);
+  @include generate-fsources("../vendor/fonts/Inter-SemiBold", $formats);
 }
 
 /* Inter Bold */
