@@ -12,4 +12,13 @@
       "input ."
       "copy theme-switch";
   }
+
+  &__mailing-list-label {
+    max-width: 230px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: generate-numeric-fweight("semibold");
+    color: $c_accent;
+    grid-area: label;
+  }
 }
