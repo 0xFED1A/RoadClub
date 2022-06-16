@@ -843,6 +843,9 @@ template {
 .footer__mailing-list-input:active, .footer__mailing-list-input:focus {
   outline: 0;
 }
+.footer__mailing-list-input:focus {
+  cursor: text;
+}
 .footer__mailing-list-input::placeholder {
   color: rgba(34, 34, 34, 0.7);
 }
