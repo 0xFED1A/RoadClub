@@ -25,4 +25,13 @@
     color: $c_accent;
     grid-area: heading;
   }
+
+  &__picture {
+    max-width: 100%;
+    grid-area: picture;
+  }
+
+  &__image {
+    width: 100%;
+  }
 }
