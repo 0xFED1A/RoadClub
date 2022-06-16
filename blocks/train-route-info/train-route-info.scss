@@ -1,5 +1,15 @@
 /* rules for train-route-info */
 
 .train-route-info {
-  display: none;
+  box-sizing: border-box;
+  padding: $p_section_padding;
+  margin: 30px 0 0 0;
+
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) 48.3%;
+  grid-template-areas:
+    "heading picture"
+    "text picture"
+    "links picture";
+  column-gap: 160px;
 }
