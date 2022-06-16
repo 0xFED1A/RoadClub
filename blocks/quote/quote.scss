@@ -1,14 +1,14 @@
 /* rules for quote block */
 
 .quote {
-  padding: 120px 120px 60px 120px;
+  padding: $p_section_padding $p_section_padding 0 $p_section_padding;
   box-sizing: border-box;
   display: grid;
   grid-template-areas:
     "picture quote"
     "picture author";
   column-gap: 80px;
-  grid-template-columns: 45.14% minmax(min-content, max-content);
+  grid-template-columns: 54.14% minmax(min-content, max-content);
   row-gap: 0;
 
   &__picture {
@@ -38,15 +38,17 @@
   &__name {
     margin: 0;
     font-size: 20px;
-    line-height: 32px;
+    /* swap figma line-height 32 to 20 value for pixelperfect */
+    line-height: 20px;
     font-weight: generate-numeric-fweight("medium");
     color: $c_accent;
   }
 
   &__occupation {
-    margin: 6px 0 0 0;
+    margin: 8px 0 0 0;
     font-size: 16px;
-    line-height: 28px;
+    /* swap figma line-height 28 to 40 value for pixelperfect */
+    line-height: 40px;
     color: rgba($c_text, 0.7);
   }
 }
