@@ -21,4 +21,18 @@
     color: $c_accent;
     grid-area: label;
   }
+
+  &__mailing-form-elements {
+    max-width: 360px;
+    height: 50px;
+
+    margin: 50px 0 0 0;
+
+    grid-area: input;
+    border: 1px solid rgba($c_input, 0.5);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
