@@ -513,7 +513,7 @@ template {
   display: grid;
   grid-template-areas: "picture quote" "picture author";
   column-gap: 80px;
-  grid-template-columns: 45.14% minmax(min-content, max-content);
+  grid-template-columns: 54.14% minmax(min-content, max-content);
   row-gap: 0;
 }
 .quote__picture {
@@ -539,14 +539,16 @@ template {
 .quote__name {
   margin: 0;
   font-size: 20px;
-  line-height: 32px;
+  /* swap figma line-height 32 to 20 value for pixelperfect */
+  line-height: 20px;
   font-weight: 500;
   color: #151515;
 }
 .quote__occupation {
-  margin: 6px 0 0 0;
+  margin: 8px 0 0 0;
   font-size: 16px;
-  line-height: 28px;
+  /* swap figma line-height 28 to 40 value for pixelperfect */
+  line-height: 40px;
   color: rgba(34, 34, 34, 0.7);
 }
 
@@ -572,7 +574,8 @@ template {
 }
 .surface-type-info__text {
   max-width: 460px;
-  margin: 50px 0 0 0;
+  /* change figma value of margin from 50px to 47px for pixelperfectness */
+  margin: 47px 0 0 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -592,7 +595,7 @@ template {
   grid-template-areas: "carousel-current carousel-next" "carousel-controls .";
   column-gap: 40px;
   row-gap: 50px;
-  grid-template-columns: repeat(2, minmax(45.14%, 650px));
+  grid-template-columns: repeat(2, minmax(49.14%, 650px));
   grid-template-rows: auto 50px;
   overflow: hidden;
   /* rules for carousel__element element */
@@ -691,6 +694,7 @@ template {
   column-gap: 40px;
 }
 .bike-type-info__card-container {
+  margin: 120px 0 0 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -715,6 +719,22 @@ template {
 }
 .bike-type-info__type-switch_active:hover {
   color: rgba(21, 21, 21, 0.75);
+}
+
+.card__figure {
+  margin: 0;
+  padding: 0;
+}
+.card__image {
+  margin: 20px;
+  border-radius: 20px;
+}
+.card__name {
+  /* swap fimga margin value 20px to 15px, 8px for piexeperfectness */
+  margin: 15px 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
 }
 
 /* rules for train-route-info */
