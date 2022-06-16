@@ -56,6 +56,11 @@
     &:focus {
       outline: 0;
     }
+
+    &:focus {
+      cursor: text;
+    }
+
     
     &::placeholder {
       color: rgba($c_text, 0.7);
