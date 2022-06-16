@@ -31,6 +31,7 @@
   }
 
   &__card-container {
+    margin: $p_section_padding 0 0 0;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
