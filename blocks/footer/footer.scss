@@ -78,4 +78,13 @@
     line-height: 28px;
     font-weight: generate-numeric-fweight("medium");
   }
+
+  &__copy {
+    margin: 100px 0 0 0;
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: generate-numeric-fweight("semibold");
+    grid-area: copy;
+    color: $c_footer-copy;
+  }
 }
