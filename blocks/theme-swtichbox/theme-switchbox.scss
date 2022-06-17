@@ -1,4 +1,4 @@
-/* rules for theme-switchbox block */
+// rules for theme-switchbox block
 
 .theme-switch-box {
   display: flex;
@@ -6,51 +6,69 @@
   column-gap: 22px;
   align-items: center;
 
+
+  // rules for theme-switchbox__pseudo-switch element
   &__pseudo-switch {
     margin: 0;
     padding: 0;
 
-    font-size: 0;
+    font: {
+      size: 0;
+      weight: 0;
+    }
     line-height: 0;
+
     color: transparent;
+
     position: relative;
 
     cursor: pointer;
   }
 
+
+  // rules for theme-switchbox__switch element
   &__switch {
     width:  0;
     height: 0;
+
     position: absolute;
     z-index: -1;
   }
 
+  /* styles for custom checkbox background */
   &__switch + &__pseudo-switch::before {
     width: 44px;
     height: 24px;
-    display: block;
 
     content: "";
+
+    display: block;
+
     background-image:
       url("../images/vector/theme-switch/theme-switch_base_light.svg");
   }
 
+  /* styles for custom checkbox control with unchecked state */
   &__switch + &__pseudo-switch::after {
     width: 20px;
     height: 20px;
-    display: block;
 
     content: "";
+
+    display: block;
+
     background-image:
       url("../images/vector/theme-switch/theme-switch_control.svg");
+
     position: absolute;
     top: 2px;
     left: 2px;
     z-index: 1;
 
-    transition: left 0.3s ease ;
+    transition: left $a_transition_speed ease ;
   }
 
+  /* styles for custom checkbox control with checked state */
   &__switch:checked + &__pseudo-switch::after {
     position: absolute;
     top: 2px;
@@ -58,20 +76,29 @@
     transition: left $a_transition_speed ease;
   }
 
+
+  // rules for theme-switchbox__icon element
   &__icon {
 
-    &_theme {
 
+    &_theme {
+    
+
+      // rules for theme-switchbox__icon_theme_light modifiers
       &_light {
         width: 28px;
         height: 28px;
+
         background-image:
           url("../images/vector/theme-switch/theme-switch_sun_light.svg");
       }
 
+
+      // rules for theme-switchbox__icon_theme_light modifiers
       &_dark {
         width: 19.35px;
         height: 19.35px;
+
         background-image:
           url("../images/vector/theme-switch/theme-switch_moon_light.svg");
       }
