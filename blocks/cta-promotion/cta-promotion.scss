@@ -20,6 +20,7 @@
 
   box-sizing: border-box;
 
+
   // rules for cta-promotion__heading element
   &__heading {
     margin: 80px 0 0 0;
@@ -27,48 +28,68 @@
     grid-area: heading;
   }
 
-  /* rules for cta-promotion__text element */
+
+  // rules for cta-promotion__text element
   &__text {
     grid-area: text;
   }
 
-  /* rules for cta-promotion__button element */
+
+  // rules for cta-promotion__button element
   &__button {
-    margin: 0;
     max-width: 180px;
+
+    margin: 0;
     padding: 16px 10px;
+
     background-color: $c_button_base;
     color: $c_button_text;
-    text-decoration: none;
-    text-align: center;
+
+    text: {
+      decoration: none;
+      align: center;
+    }
+
     border-radius: 4px;
+
     box-sizing: border-box;
+
     grid-area: button;
   }
 
-  /* rules for cta-promotion__bike-picture-caption element */
+
+  // rules for cta-promotion__bike-picture-caption element
   &__bike-picture-caption {
     margin: 0 0 90px 0;
+
     font: {
       size: 18px;
       weight: generate-numeric-fweight("regular");
     }
     line-height: 18px;
+
     color: $c_accent;
+
     align-self: center;
     grid-area: caption;
 
-    /* rules for cta-promotion__bike-picture-caption_darkened modifier */
+
+    // rules for cta-promotion__bike-picture-caption_darkened modifier
     &_darkened {
       color: $c_accent_dark;
     }
   }
 
-  /* rules for cta-promotion__bike-picture-container element */
+
+  // rules for cta-promotion__bike-picture-container element
   &__bike-picture-container {
-    max-width: 610px;
-    max-height: 836px;
+    max: {
+      width: 610px;
+      height: 836px;
+    }
+
     margin: 20px 0 0 0;
+
     background: {
       size: contain;
       repeat: no-repeat;
@@ -76,20 +97,27 @@
       origin: border-box;
       position: right top;
     }
+
     grid-area: picture;
+
     display: flex;
     align-items: center;
 
     &::before {
-      content: "";
-      float: left;
       height: 0;
+
       padding-top: calc(836px / 610px * 100%);
+
+      content: "";
+
+      float: left;
     }
 
     &::after {
       content: "";
+
       display: block;
+
       clear: both;
     }
   }
