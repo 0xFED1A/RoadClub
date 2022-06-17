@@ -11,17 +11,15 @@
   box-sizing: border-box;
 
 
-
   // rules for surface-type-info__heading element
   &__heading {
     margin: 0;
   }
 
 
-
   // rules for surface-type-info__text element
   &__text {
-    // change figma value of margin from 50px to 47px for pixelperfectness
+    /* change figma value of margin from 50px to 47px for pixelperfectness */
     margin: 47px 0 0 0;
   }
 
