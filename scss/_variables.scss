@@ -44,5 +44,10 @@ $o_bike-link_curr_hov_dark: 0.65;
 $o_app-link_dark: 1;
 $o_app-link_hov_dark: 0.65;
 
-// padding and margin variables
+// padding, margin, width variables
 $p_section_padding: 120px;
+$w_text-max-width: 460px;
+
+// animation variables
+$a_transition_speed: 0.2s;
+$a_transition_speed_slow: 0.7s;
