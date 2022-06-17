@@ -1,47 +1,70 @@
-/* rules for bike-type-info block */
+// rules for bike-type-info block
 
 .bike-type-info {
-  padding: $p_section_padding  $p_section_padding
-    calc($p_section_padding / 2) $p_section_padding;
-  box-sizing: border-box;
+  padding: {
+    top: $p_section_padding;
+    right: $p_section_padding;
+    bottom: calc($p_section_padding / 2);
+    left: $p_section_padding;
+  }
+
   display: flex;
   flex-direction: column;
 
+  box-sizing: border-box;
+
+
+  // rules for bike-type-info__heading-container element
   &__heading-container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
 
+
+  // rules for bike-type-info__heading element
   &__heading {
     margin: 0;
   }
 
+
+  // rules for bike-type-info__type-switchbox element
   &__type-switch-box {
     display: flex;
     column-gap: 40px;
   }
 
+
+  // rules for bike-type-info__card-container
   &__card-container {
     margin: $p_section_padding 0 0 0;
+
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     column-gap: 30px;
   }
 
+
+  // rules for bike-type-info__type-switch
   &__type-switch {
+    padding: 0;
+
     color: rgba($c_text, $o_bike_link);
     background-color: transparent;
+
     border: none;
-    padding: 0;
-    cursor: pointer;
+
     appearance: none;
+
+    cursor: pointer;
 
     &:hover {
       color: rgba($c_text,$o_bike_link_hov);
     }
-    
+
+
+    // rules for bike-type-info__type-switch_active modifier
     &_active {
       color: rgba($c_accent, $o_bike_link_curr);
 
@@ -51,4 +74,3 @@
     }
   }
 }
-
