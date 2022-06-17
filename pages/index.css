@@ -873,6 +873,64 @@ template {
 }
 .footer__theme-switch-box {
   grid-area: theme-switch;
+  align-self: end;
+  justify-self: end;
+}
+
+.theme-switch-box {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 22px;
+  align-items: center;
+}
+.theme-switch-box__pseudo-switch {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  position: relative;
+}
+.theme-switch-box__switch {
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+}
+.theme-switch-box__switch + .theme-switch-box__pseudo-switch::before {
+  width: 44px;
+  height: 24px;
+  display: block;
+  content: "";
+  background-image: url("../images/vector/theme-switch/theme-switch_base_light.svg");
+}
+.theme-switch-box__switch + .theme-switch-box__pseudo-switch::after {
+  width: 20px;
+  height: 20px;
+  display: block;
+  content: "";
+  background-image: url("../images/vector/theme-switch/theme-switch_control.svg");
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+  transition: left 0.3s ease;
+}
+.theme-switch-box__switch:checked + .theme-switch-box__pseudo-switch::after {
+  position: absolute;
+  top: 2px;
+  left: 22px;
+  transition: left 0.3s ease;
+}
+.theme-switch-box__icon_theme_light {
+  width: 28px;
+  height: 28px;
+  background-image: url("../images/vector/theme-switch/theme-switch_sun_light.svg");
+}
+.theme-switch-box__icon_theme_dark {
+  width: 19.35px;
+  height: 19.35px;
+  background-image: url("../images/vector/theme-switch/theme-switch_moon_light.svg");
 }
 
 /*# sourceMappingURL=index.css.map */
