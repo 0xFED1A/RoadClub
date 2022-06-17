@@ -13,23 +13,12 @@
 
 
 
-  /* rules for surface-type-info__text element */
+  // rules for surface-type-info__text element
   &__text {
-    max-width: 460px;
-    /* change figma value of margin from 50px to 47px for pixelperfectness */
+    // change figma value of margin from 50px to 47px for pixelperfectness
     margin: 47px 0 0 0;
-    font: {
-      size: 18px;
-      weight: generate-numeric-fweight("regular");
-    }
-    line-height: 28px;
-    color: rgba($c_text, 0.7);
-
-    /* rules for cta-promotion__text_darkened modifier */
-    &_darkened {
-      color: rgba($c_accent_dark, 0.7);
-    }
   }
+
 
   &__carousel {
     margin: 80px 0 0 0;

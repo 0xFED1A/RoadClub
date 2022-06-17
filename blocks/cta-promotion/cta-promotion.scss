@@ -25,20 +25,7 @@
 
   /* rules for cta-promotion__text element */
   &__text {
-    max-width: 460px;
-    margin: 0;
-    font: {
-      size: 18px;
-      weight: generate-numeric-fweight("regular");
-    }
-    line-height: 28px;
-    color: rgba($c_text, 0.7);
     grid-area: text;
-
-    /* rules for cta-promotion__text_darkened modifier */
-    &_darkened {
-      color: rgba($c_accent_dark, 0.7);
-    }
   }
 
   /* rules for cta-promotion__button element */
