@@ -105,5 +105,15 @@
   justify-content: space-between;
   column-gap: 22px;
   align-items: center;
+
+  &__pseudo-switch {
+    margin: 0;
+    padding: 0;
+
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    position: relative;
+  }
   }
 }
