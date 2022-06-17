@@ -95,5 +95,9 @@
 
   &__theme-switch-box {
     grid-area: theme-switch;
+    align-self: end;
+    justify-self: end;
+  }
+}
   }
 }
