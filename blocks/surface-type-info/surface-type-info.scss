@@ -4,23 +4,14 @@
   padding: $p_section_padding 0 0 $p_section_padding; 
   box-sizing: border-box;
 
-  /* rules for surface-type-info__heading element */
-  &__heading {
-    max-width: 460px;
-    margin: 0;
-    font: {
-      size: 55px;
-      weight: generate-numeric-fweight("bold");
-    }
-    line-height: 60px;
-    letter-spacing: -0.5px;
-    color: $c_accent;
 
-    /* rules for surface-type-info_heading_darkened modifier */
-    &_darkened {
-      color: $c_accent_dark;
-    }
+
+  // rules for surface-type-info__heading element
+  &__heading {
+    margin: 0;
   }
+
+
 
   /* rules for surface-type-info__text element */
   &__text {

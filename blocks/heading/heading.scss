@@ -1,0 +1,21 @@
+// rules for heading block
+
+.heading {
+  max-width: 460px;
+
+  font: {
+    size: 55px;
+    weight: generate-numeric-fweight("bold");
+  }
+  line-height: 60px;
+  letter-spacing: -0.5px;
+
+  color: $c_accent;
+
+
+
+  // rules for heading_darkened modifier
+  &_darkened {
+    color: $c_accent_dark;
+  }
+}
