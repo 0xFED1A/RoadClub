@@ -9,7 +9,7 @@
 @import "../vendor/fonts/fonts";
 
 // import normalize
-@import "../vendor/normalize.scss";
+@import "../vendor/normalize";
 
 // import page
 @import "../blocks/page/page";
@@ -24,7 +24,7 @@
 @import "../blocks/link/link";
 
 // import header
-@import "../blocks/header/header.scss";
+@import "../blocks/header/header";
 
 // import cta-promotion
 @import "../blocks/cta-promotion/cta-promotion";
