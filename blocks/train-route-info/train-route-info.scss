@@ -1,33 +1,47 @@
-/* rules for train-route-info */
+// rules for train-route-info block
 
 .train-route-info {
-  box-sizing: border-box;
-  padding: $p_section_padding;
   margin: 30px 0 0 0;
+  padding: $p_section_padding;
 
   display: grid;
-  grid-template-columns: minmax(min-content, max-content) 48.3%;
-  grid-template-areas:
-    "heading picture"
-    "text picture"
-    "links picture";
+  grid: {
+    template: {
+      areas:
+        "heading picture"
+        "text picture"
+        "links picture";
+      columns: minmax(min-content, max-content) 48.3%;
+    }
+  }
   column-gap: 160px;
 
+  box-sizing: border-box;
+
+
+  // rules for train-route-info__heading element
   &__heading {
     margin: 0;
 
     grid-area: heading;
   }
 
+
+  // rules for train-route-info__picture element
   &__picture {
     max-width: 100%;
+
     grid-area: picture;
   }
 
+
+  // rules for train-route-info__image element
   &__image {
     width: 100%;
   }
 
+
+  // rules for train-route__text element
   &__text {
     /* change figma value of margin from 50px to 40px for pixelperfectness */
     margin: 40px 0 0 0;
@@ -35,17 +49,24 @@
     grid-area: text;
   }
 
+  // rules for train-route-info__links element
   &__links {
     margin: 182px 0 0 0;
+
     grid-area: links;
   }
 
+
+  // rules for train-route-info__link element
   &__link {
-    font-size: 18px;
+    font: {
+      size: 18px;
+      weight: generate-numeric-fweight("semibold");
+    }
     line-height: 28px;
-    color: $c_accent;
-    font-weight: generate-numeric-fweight("semibold");
     text-decoration: none;
+
+    color: $c_accent;
   }
 
   &__link:last-child {
