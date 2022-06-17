@@ -1,0 +1,91 @@
+/* rules for carousel block */
+.carousel {
+  display: grid;
+  grid-template-areas:
+    "carousel-current carousel-next"
+    "carousel-controls .";
+  column-gap: 40px;
+  row-gap: 50px;
+  grid-template-columns: repeat(2, minmax(49.14%, 650px));
+  grid-template-rows: auto 50px;
+  overflow: hidden;
+
+  /* rules for carousel__element element */
+  &__element {
+    position: relative;
+
+  /* rules for carousel__element_current modifier */
+    &_current::before {
+      content: "";
+      width: 100px;
+      height: 40px;
+      position: absolute; 
+      bottom: 16px;
+      left: 0;
+      z-index: 1;
+      background-image: url("../images/vector/surface-type/surface-type_base.svg");
+      background-position: top left;
+      background-size: cover;
+      background-repeat: no-repeat;
+    } 
+
+    &_current::after {
+      content: "";
+      width: 50px;
+      height: 16px;
+      position: absolute;
+      bottom: 28px;
+      left: 16px;
+      z-index: 2;
+      background-image: url("../images/vector/surface-type/surface-type_sawtooth.svg");
+    }
+  }
+
+  /* rules for carouse__image element */
+  &__image {
+    max-width: 100%;
+  }
+  
+  /* rules for carousel__control-box element */
+  &__control-box {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  /* rules for carousel__control element */
+  &__control {
+    width: 50px;
+    height: 50px;
+    background-color: $c_carousel-ctrl;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    appearance: none;
+    border: none;
+    border-radius: 100%;
+    position: relative;
+    cursor: pointer;
+    
+    &:hover {
+      opacity: 75%;
+    }
+
+    &::before {
+      width: 7px;
+      height: 16px;
+      content: "";
+      position: absolute;
+      top: 16.5px;
+      left: 19.3px;
+      background-image: url("../images/vector/carousel-control/carousel-control_control_ligth.svg");
+    }
+
+    /* rules for carousel__control_direction_back modifier */
+    &_direction {
+      &_forward::before {
+        transform: scaleX(-1) translateX(-5.3px);
+      }
+    }
+  }
+}
