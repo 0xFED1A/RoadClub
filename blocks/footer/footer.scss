@@ -155,5 +155,25 @@
     left: 22px;
     transition: left 0.3s ease;
   }
+
+  &__icon {
+
+    &_theme {
+
+      &_light {
+        width: 28px;
+        height: 28px;
+        background-image:
+          url("../images/vector/theme-switch/theme-switch_sun_light.svg");
+      }
+
+      &_dark {
+        width: 19.35px;
+        height: 19.35px;
+        background-image:
+          url("../images/vector/theme-switch/theme-switch_moon_light.svg");
+      }
+    }
   }
+
 }
