@@ -1,7 +1,13 @@
-/* rules for surface-type-info block */
+// rules for surface-type-info block
 
 .surface-type-info {
-  padding: $p_section_padding 0 0 $p_section_padding; 
+  padding: {
+    top: $p_section_padding;
+    right: 0;
+    bottom: 0;
+    left: $p_section_padding; 
+  }
+
   box-sizing: border-box;
 
 
@@ -20,6 +26,7 @@
   }
 
 
+  // rules for surface-type-info__carousel element
   &__carousel {
     margin: 80px 0 0 0;
   }
