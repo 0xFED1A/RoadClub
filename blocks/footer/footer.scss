@@ -115,5 +115,12 @@
     color: transparent;
     position: relative;
   }
+
+  &__switch {
+    width:  0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+  }
   }
 }
