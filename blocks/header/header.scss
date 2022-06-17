@@ -1,11 +1,14 @@
-/* rules for header block */
+// rules for header block
 
 .header {
   width: 100%;
+
   padding: 28px 120px;
+
   align-self: flex-end;
 
-  /* rules for nav__links element */
+
+  // rules for nav__links element
   &__nav-links {
     display: flex;
     flex-direction: row;
@@ -13,7 +16,8 @@
     column-gap: 34px;
   }
 
-  /* rules for nav__link element */
+
+  // rules for nav__link element
   &__nav-link {
     font: {
       size: 14px;
@@ -21,13 +25,17 @@
     }
     text-decoration: none;
     line-height: 18px;
+
     color: $c_accent;
+
+    transition: color $a_transition_speed ease;
 
     &:hover {
       color: rgba($c_accent, $o_header_hov);
     }
 
-    /* rules for nav__link_darkened modifier */
+
+    // rules for nav__link_darkened modifier
     &_darkened {
       color: $c_accent_dark
     }
