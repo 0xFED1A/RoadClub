@@ -1,7 +1,7 @@
 // rules for text block
 
 .text {
-  max-width: 460px;
+  max-width: $w_text-max-width;
 
   margin: 0;
 
@@ -12,7 +12,6 @@
   line-height: 28px;
 
   color: rgba($c_text, 0.7);
-
 
 
   // rules for text_darkened modifier
