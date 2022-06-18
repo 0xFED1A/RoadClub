@@ -52,6 +52,23 @@
 
     grid-area: quote;
 
+    @media screen {
+      @media (max-width: 1350px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      @media (max-width: 1210px) {
+        font-size: 27px;
+        line-height: 35px;
+      }
+
+      @media (max-width: 1080px) {
+        font-size: 24px ;
+        line-height: 31px;
+      }
+    }
+
 
     // rules for quote__slogan_darkened modifier
     &_darkened {
