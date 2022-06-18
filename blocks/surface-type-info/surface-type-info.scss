@@ -26,7 +26,8 @@
 
   // rules for surface-type-info__carousel element
   &__carousel {
-    margin: 80px 0 0 0;
+    /* swap figma value 80px to 6% for responsivness */
+    margin: 6% 0 0 0;
   }
 }
 
