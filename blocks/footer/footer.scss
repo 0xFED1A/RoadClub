@@ -1,0 +1,207 @@
+// rules for footer block
+
+.footer {
+  padding: {
+    top: 80px;
+    right: $p_section_padding;
+    bottom: calc($p_section_padding / 2);
+    left: $p_section_padding;
+  }
+
+  background-color: $c_footer-bg;
+
+  box-sizing: border-box;
+
+
+  // rules for footer__mailing-list-form element
+  &__mailing-list-form {
+    display: grid;
+    grid-template-areas:
+      "label ."
+      "input ."
+      "copy theme-switch";
+  }
+
+
+  // rules for footer__mailing-list-label element
+  &__mailing-list-label {
+    max-width: 230px;
+    font: {
+      size: 24px;
+      weight: 32px;
+    }
+    font-weight: generate-numeric-fweight("semibold");
+
+    color: $c_accent;
+
+    grid-area: label;
+
+
+    // rules for footer__mailing-list-label_darkened modifier
+    &_darkened {
+      color: $c_accent_dark;
+    }
+  }
+
+
+  // rules for footer__mailing-form-elements element
+  &__mailing-form-elements {
+    max-width: 360px;
+    height: 50px;
+
+    margin: 50px 0 0 0;
+
+    border: 1px solid rgba($c_input, 0.5);
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    grid-area: input;
+
+    transition: border-color $a_transition_speed ease;
+
+    &:hover {
+      border-color: $c_input;
+    }
+
+
+    // rules for footer__mailing-form-elements_darkend modifier
+    &_darkened {
+      border-color: rgba($c_input_dark, 0.5);
+
+      &:hover {
+        border-color: $c_input_dark;
+      }
+    }
+  }
+
+
+  // rules for footer__mailing-list-input element
+  &__mailing-list-input {
+    width: 100%;
+    height: 50px;
+
+    margin-left: 20px;
+
+    font: {
+      size: 13px;
+      weight: generate-numeric-fweight("medium");
+    }
+    line-height: 28px;
+
+    color: $c_accent;
+    background-color: transparent;
+
+    border: none;
+
+    display: block;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+
+    &:focus {
+      cursor: text;
+    }
+
+    &::placeholder {
+      color: rgba($c_text, 0.7);
+    }
+
+    &:hover::placeholder {
+      color: $c_accent;
+    }
+
+
+    // rules for footer__mailing-list-input_darkened modifier
+    &_darkened {
+      color: $c_accent_dark;  
+
+      &::placeholder {
+        color: rgba($c_accent_dark, 0.7)
+      }
+
+      &:hover::placeholder {
+        color: $c_accent_dark;
+      }
+    }
+
+  }
+
+
+  // rules for footer__mailing-list-submit element
+  &__mailing-list-submit {
+    margin-right: 22px;
+    padding: 0 0 0 20px;
+
+    font: {
+      size: 13px;
+      weight:  generate-numeric-fweight("medium");
+    }
+    line-height: 28px;
+
+    border: 0;
+
+    appearance: none;
+
+    background-color: transparent;
+    color: $c_accent;
+
+    cursor: pointer;
+
+
+    // rules for footer__mailing-list-submit_hidden modifier
+    &_hidden {
+      visibility: hidden;
+    }
+
+
+    // rules for footer__mailing-list-submit_darkened modifier
+    &_darkened {
+      color: $c_accent_dark;
+    }
+  }
+
+
+  // rules for footer__copy element
+  &__copy {
+    margin: 100px 0 0 0;
+
+    font: {
+      size: 14px;
+      weight: generate-numeric-fweight("semibold");
+    }
+    line-height: 19.6px;
+
+    color: $c_footer-copy;
+
+    grid-area: copy;
+
+
+    // rules for footer__copy_darkened modifier
+    &_darkened {
+      color: $c_footer-copy_dark;
+    }
+  }
+
+
+  // rules for footer__theme-switch-box element
+  &__theme-switch-box {
+    grid-area: theme-switch;
+    align-self: end;
+    justify-self: end;
+  }
+
+
+  // rules for footer_darkened modifier
+  &_darkened {
+    background-color: $c_footer-bg_dark;
+  }
+}

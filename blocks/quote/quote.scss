@@ -1,0 +1,110 @@
+// rules for quote block
+
+.quote {
+  padding: {
+    top: $p_section_padding;
+    right: $p_section_padding;
+    bottom: 0;
+    left: $p_section_padding;
+  }
+
+  display: grid;
+  grid: {
+    template: {
+      areas:
+        "picture quote"
+        "picture author";
+      columns: 54.14% minmax(min-content, max-content);
+    }
+  }
+  column-gap: 80px;
+  row-gap: 0;
+
+  box-sizing: border-box;
+
+
+  // rules for quote__picture element
+  &__picture {
+    grid-area: picture;
+  }
+
+
+  // rules for quote__image element
+  &__image {
+    max-width:100%;
+  }
+
+
+  // rules for quote__slogan element
+  &__slogan {
+    max-width: 470px;
+
+    font: {
+      size: 34px;
+      weight: generate-numeric-fweight("semibold");
+    }
+    line-height: 44px;
+    letter-spacing: -0.5px;
+
+    quotes:"" "";
+
+    color: $c_accent;
+
+    grid-area: quote;
+
+
+    // rules for quote__slogan_darkened modifier
+    &_darkened {
+      color: $c_accent_dark;
+    }
+  }
+
+
+  // ruels for quote__author element
+  &__author {
+    grid-area: author;
+    align-self: end;
+  }
+
+
+  // rules for quote__name element
+  &__name {
+    margin: 0;
+
+    font: {
+      size: 20px;
+      weight: generate-numeric-fweight("medium");
+    }
+    /* swap figma line-height 32 to 20 value for pixelperfect */
+    line-height: 20px;
+
+    color: $c_accent;
+
+    
+    // rules for quote__name_darkened modifier
+    &_darkened {
+      color: $c_accent_dark;
+    }
+  }
+
+
+  // rules for quote__occupation element
+  &__occupation {
+    margin: 8px 0 0 0;
+
+    font: {
+      size: 16px;
+      weight: generate-numeric-fweight("regular");
+    }
+    /* swap figma line-height 28 to 40 value for pixelperfect */
+    line-height: 40px;
+
+    color: rgba($c_text, 0.7);
+
+
+    // rules for quote__occupation_darkened modifier
+    &_darkened {
+      color: rgba($c_text_dark, 0.7); 
+    }
+  }
+}

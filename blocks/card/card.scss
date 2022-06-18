@@ -1,0 +1,71 @@
+// ruels for card block
+
+.card {
+
+
+  // rules for card__figure element
+  &__figure {
+    margin: 0;
+    padding: 0;
+
+    cursor: pointer;
+  }
+
+  &__figure:hover &__image {
+    transform: scale(1.1); 
+    box-shadow: -5px 15px 20px 0 rgba(#000, 0.2);
+  }
+
+  &__figure:hover &__name::after {
+    width: 100%;
+  }
+
+  
+  // rules for  card__image element
+  &__image {
+    margin: 20px;
+
+    border-radius: 20px;
+
+    transition: transform $a_transition_speed_slow ease,
+      box-shadow $a_transition_speed_slow ease;
+  }
+
+
+  // rules for card__name element
+  &__name {
+    /* swap fimga margin value 20px to 15px, 8px for piexeperfectness */
+    margin: 15px 0 0 8px;
+
+    font: {
+      size: 18px;
+      weight: generate-numeric-fweight("semibold");
+    }
+    line-height: 22px;
+
+    color: $c_accent;
+
+    position: relative;
+
+    &::after {
+      width: 0;
+      height: 2px;
+
+      content: "";
+
+      background: linear-gradient($c_button_base, $c_button_accent);
+
+      transition: width $a_transition_speed_slow ease;
+
+      position: absolute;
+      top: 24px;
+      left: 0;
+    }
+
+
+    // rules card__name_darkened modifier */
+    &_darkened {
+     color: $c_accent_dark;
+    }
+  }
+}

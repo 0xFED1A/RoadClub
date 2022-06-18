@@ -1,0 +1,44 @@
+// font functions
+
+// generate-numeric-fweight
+//
+// function takes text representation of font weight and
+// converts it to numeric representation
+//
+//    @param {string} weightname - fontweight string for conversion
+//    @returns {val} - numeric value
+@function generate-numeric-fweight($weightname) {
+  $weightval: 0; 
+  @if ($weightname == "thin") {
+    $weightval: 100;
+  } @else if ($weightname == "extralight") {
+    $weightval: 200;
+  } @else if ($weightname == "light") {
+    $weightval: 300;
+  } @else if ($weightname == "regular") {
+    $weightval: 400;
+  } @else if ($weightname == "medium") {
+    $weightval: 500;
+  } @else if ($weightname == "semibold") {
+    $weightval: 600;
+  } @else if ($weightname == "bold") {
+    $weightval: 700;
+  } @else if ($weightname == "extrabold") {
+    $weightval: 800;
+  } @else if ($weightname == "black") {
+    $weightval: 900;
+  }
+  @return $weightval;
+}
+
+// generate-fsoruce
+//
+// function takes location of font and its format, then
+// it generates font source
+//
+//    @param {string} dir - current location of font
+//    @param {string} format - font extention
+//    @returns {string} - result font src
+@function generate-fsource($dir, $format) {
+  @return 'url("' + $dir + '.' + $format + '") format("' + $format + '")';
+}

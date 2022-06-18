@@ -1,0 +1,134 @@
+// rules for carousel block
+
+.carousel {
+  display: grid;
+  grid: {
+    template: {
+      areas:
+        "carousel-current carousel-next"
+        "carousel-controls .";
+    columns: repeat(2, minmax(49.14%, 650px));
+    rows: auto 50px;
+    }
+  }
+  column-gap: 40px;
+  row-gap: 50px;
+
+  overflow: hidden;
+
+
+  // rules for carousel__element element
+  &__element {
+    position: relative;
+
+
+  // rules for carousel__element_current modifier
+    &_current::before {
+      width: 100px;
+      height: 40px;
+
+      content: "";
+
+      position: absolute;
+      bottom: 16px;
+      left: 0;
+      z-index: 1;
+
+      background: {
+        image: url("../images/vector/surface-type/surface-type_base.svg");
+        position: top left;
+        size: cover;
+        repeat: no-repeat;
+      }
+    }
+
+    &_current::after {
+      width: 50px;
+      height: 16px;
+
+      content: "";
+
+      position: absolute;
+      bottom: 28px;
+      left: 16px;
+      z-index: 2;
+
+      background-image:
+        url("../images/vector/surface-type/surface-type_sawtooth.svg");
+    }
+  }
+
+  // rules for carouse__image element
+  &__image {
+    max-width: 100%;
+  }
+
+
+  // rules for carousel__control-box element
+  &__control-box {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+
+  // rules for carousel__control element
+  &__control {
+    width: 50px;
+    height: 50px;
+
+    font-size: 0;
+    line-height: 0;
+
+    background-color: $c_carousel-ctrl;
+    color: transparent;
+
+    appearance: none;
+
+    border: none;
+    border-radius: 100%;
+
+    position: relative;
+
+    transition: opacity $a_transition_speed ease;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: 75%;
+    }
+
+    &::before {
+      width: 7px;
+      height: 16px;
+
+      content: "";
+
+      background-image:
+        url("../images/vector/carousel-control/carousel-control_control_ligth.svg");
+
+      position: absolute;
+      top: 16.5px;
+      left: 19.3px;
+    }
+
+
+    // rules for carousel__control_direction_forward modifier
+    &_direction {
+      &_forward::before {
+        transform: scaleX(-1) translateX(-5.3px);
+      }
+    }
+    
+
+    // rules for carousel__control_darkened modifier
+    &_darkened {
+      background-color: $c_carousel-ctrl_dark;
+    }
+
+    &::before {
+      background-image:
+        url("../images/vector/carousel-control/carousel-control_control_dark.svg");
+    }
+  }
+}

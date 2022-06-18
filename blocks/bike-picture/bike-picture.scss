@@ -1,0 +1,36 @@
+// rules for bike picture block
+
+.bike-picture {
+    padding-bottom: 20%;
+
+    position: sticky;
+    top: 20%;
+
+    &::before {
+      content: "";
+    }
+
+
+    // rules for bike-picture__image element
+    &__image {
+      max: {
+        width: 340px;
+        height: 260px;
+      }
+      width: 23.7vw;
+      height: 18.7vw;
+
+      padding: 4% 15%;
+
+      background-color: $c_page-bg;
+
+      box-shadow: -20px 60px 200px 0 rgba(#000, 0.2);
+
+      border-radius: 20px;
+
+      object-fit: cover;
+
+      position: relative;
+      right: 14vw;
+    }
+}

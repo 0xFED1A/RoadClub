@@ -32,28 +32,54 @@
     </header>
     <main class="main">
       <section class="cta-promotion">
-        <h1 class="cta-promotion__heading">Шоссе, ТТ и Грэвел</h1>
-        <p class="cta-promotion__text">
+        <h1 class="cta-promotion__heading heading">Шоссе, ТТ и&nbsp;Грэвел</h1>
+        <p class="cta-promotion__text text">
           Триатлонные старты, горные серпантины или грейвел заезды по
           живописным маршрутам – нужно только определиться с выбором
           велосипеда и отправиться в путь.
         </p>
         <a class="cta-promotion__button" href="#">Подробнее</a>
-        <figure class="cta-promotion__bike-figure bike-figure">
-          <picture class="bike-figure__picture">
-            <img class="bike-figure__image" src="#" alt="">
+        <div class="cta-promotion__bike-picture-container">
+          <picture class="cta-promotion__bike-picture bike-picture">
+            <source
+              class="bike-picture__source"
+              srcset="
+                ./images/raster/bikes/systemix-himod/1x.jpg 1x,
+                ./images/raster/bikes/systemix-himod/2x.jpg 2x,
+                ./images/raster/bikes/systemix-himod/3x.jpg 3x,
+              "
+              type="image/jpeg"
+            >
+            <img
+              class="bike-picture__image"
+              src="./images/raster/bikes/systemix-himod/1x.jpg"
+              alt="Шоссейный велосипед Cannondale Systemsix"
+            >
           </picture>
-          <figcaption class="bike-figure__caption">
-            Cannondale Systemsix
-          </figcaption>
-        </figure>
+        </div>
+        <p class="cta-promotion__bike-picture-caption">
+          Cannondale Systemsix
+        </p>
       </section>
       <section class="quote" aria-label="Катайся как хочешь - но катайся">
         <picture class="quote__picture">
-          <img class="quote__image" src="#" alt="">
+          <source
+            class="quote__source"
+            srcset="
+              ./images/raster/quote/1x.jpg 1x,
+              ./images/raster/quote/2x.jpg 2x,
+              ./images/raster/quote/3x.jpg 3x,
+            "
+            type="image/jpeg"
+          >
+          <img
+            class="quote__image"
+            src="./images/raster/quote/1x.jpg"
+            alt="Фотография велосипедиста въезжающего в крутой поворот"
+          >
         </picture>
         <q class="quote__slogan">
-          Катайся много или мало, долго или коротко, как хочешь - но катайся
+          «Катайся много или мало, долго или коротко, как хочешь - но катайся»
         </q>
         <div class="quote__author">
           <p class="quote__name">Эдди Меркс</p>
@@ -61,18 +87,44 @@
         </div>
       </section>
       <section class="surface-type-info">
-        <h2 class="surface-type-info__heading">Шоссе</h2>
-        <p class="surface-type-info__text">
+        <h2 class="surface-type-info__heading heading">Шоссе</h2>
+        <p class="surface-type-info__text text">
           На шоссейном велосипеде можно ездить по асфальту на разных
           градиентах: будь то горы или равнины. Гонки проходят в командном
           пелотоне, но тренироваться можно и самостоятельно.
         </p>
         <div class="surface-type-info__carousel carousel">
-          <picture class="carousel__element carouse__element_current">
-            <img class="carousel__image" src="#" alt="">
+          <picture class="carousel__element carousel__element_current">
+            <source
+              class="carousel__source"
+              srcset="
+                ./images/raster/surface/sawtooth/1x.jpg 1x,
+                ./images/raster/surface/sawtooth/2x.jpg 2x,
+                ./images/raster/surface/sawtooth/3x.jpg 3x,
+              "
+              type="image/jpeg"
+            >
+            <img
+              class="carousel__image"
+              src="./images/raster/surface/sawtooth/1x.jpg"
+              alt="Фотография поворота на горном шоссе"
+            >
           </picture>
           <picture class="carousel__element">
-            <img class="carousel__image" src="#" alt="">
+            <source
+              class="carousel__source"
+              srcset="
+                ./images/raster/surface/curvy/1x.jpg 1x,
+                ./images/raster/surface/curvy/2x.jpg 2x,
+                ./images/raster/surface/curvy/3x.jpg 3x,
+              "
+              type="image/jpeg"
+            >
+            <img
+              class="carousel__image"
+              src="./images/raster/surface/curvy/1x.jpg"
+              alt="Фотография велосипедиста на лесной тропинке"
+            >
           </picture>
           <div class="carousel__control-box">
             <button
@@ -89,24 +141,25 @@
         </div>
       </section>
       <section class="bike-type-info">
-        <div class="bike_type-info__heading-container">
-          <h2 class="bike-type-info__heading">
+        <div class="bike-type-info__heading-container">
+          <h2 class="bike-type-info__heading heading">
             Велосипеды
           </h2>
           <div class="bike-type-info__type-switch-box">
             <button
               class="
                 bike-type-info__type-switch
-                bike-type-info__type-switch_active
+                bike-type-info__type-switch_type_active-light
+                link
               "
               type="button"
             >
               Шоссе
             </button>
-              <button class="bike-type-info__type-switch" type="button">
+              <button class="bike-type-info__type-switch link" type="button">
               Грэвел
             </button>
-            <button class="bike-type-info__type-switch" type="button">
+            <button class="bike-type-info__type-switch link" type="button">
               ТТ
             </button>
           </div>
@@ -115,7 +168,20 @@
           <article class="bike_type-info__card card">
             <figure class="card__figure">
               <picture class="card__picture">
-                <img class="card__image" src="#" alt="">
+                <source
+                  class="card__source"
+                  srcset="
+                    ./images/raster/bikes/caledonia/1x.jpg 1x,
+                    ./images/raster/bikes/caledonia/2x.jpg 2x,
+                    ./images/raster/bikes/caledonia/3x.jpg 3x,
+                  "
+                  type="image/jpeg"
+                >
+                <img
+                  class="card__image"
+                  src="./images/raster/bikes/caledonia/1x.jpg"
+                  alt="Шоссейный велосипед Cervelo Caledonia-5"
+                >
               </picture>
               <figcaption class="card__name">
                 Cervelo Caledonia-5
@@ -125,7 +191,20 @@
           <article class="bike_type-info__card card">
             <figure class="card__figure">
               <picture class="card__picture">
-                <img class="card__image" src="#" alt="">
+                <source
+                  class="card__source"
+                  srcset="
+                    ./images/raster/bikes/systemix-himod/1x.jpg 1x,
+                    ./images/raster/bikes/systemix-himod/2x.jpg 2x,
+                    ./images/raster/bikes/systemix-himod/3x.jpg 3x,
+                  "
+                  type="image/jpeg"
+                >
+                <img
+                  class="card__image"
+                  src="./images/raster/bikes/systemix-himod/"
+                  alt="Шоссейный велосипед Cannondale Systemsix Himod"
+                >
               </picture>
               <figcaption class="card__name">
                 Cannondale Systemsix Himod
@@ -135,7 +214,20 @@
           <article class="bike_type-info__card card">
             <figure class="card__figure">
               <picture class="card__picture">
-                <img class="card__image" src="#" alt="">
+                <source
+                  class="card__source"
+                  srcset="
+                    ./images/raster/bikes/domane-sl7/1x.jpg 1x,
+                    ./images/raster/bikes/domane-sl7/2x.jpg 2x,
+                    ./images/raster/bikes/domane-sl7/3x.jpg 3x,
+                  "
+                  type="image/jpeg"
+                >
+                <img
+                  class="card__image"
+                  src="./images/raster/bikes/domane-sl7/1x.jpg"
+                  alt="Шоссейный велосипед Trek Domane SL-7"
+                >
               </picture>
               <figcaption class="card__name">
                 Trek Domane SL-7
@@ -145,20 +237,33 @@
         </div>
       </section>
       <section class="train-route-info">
-        <h2 class="train-route-info__heading">
+        <h2 class="train-route-info__heading heading">
           Тренировки
         </h2>
         <picture class="train-route-info__picture">
-          <img class="train-route-info__image" src="#" alt="">
+          <source
+            class="train-route-info__source"
+            srcset="
+              ./images/raster/train/1x.jpg 1x,
+              ./images/raster/train/2x.jpg 2x,
+              ./images/raster/train/3x.jpg 3x,
+            "
+            type="image/jpeg"
+          >
+          <img
+            class="train-route-info__image"
+            src="./images/raster/train/1x.jpg"
+            alt="Фотография крутого поворота на асфальтированной дороге"
+          >
         </picture>
-        <p class="train-route-info__text">
+        <p class="train-route-info__text text">
           Чтобы найти маршрут для тренировки можно воспользоваться сервисом
           Komoot, а записать эти тренировки поможет приложение Strava, а также
           это приложение позволит построить тренировочный план.
         </p>
         <div class="train-route-info__links">
-          <a class="train-route-info__link" href="#" target="_blank">Strava</a>
-          <a class="train-route-info__link" href="#" target="_blank">Komoot</a>
+          <a class="train-route-info__link link" href="#" target="_blank">Strava</a>
+          <a class="train-route-info__link link" href="#" target="_blank">Komoot</a>
         </div>
       </section>
     </main>
@@ -167,29 +272,35 @@
         <label class="footer__mailing-list-label" for="email_input">
           Подпишитесь на рассылку —
         </label>
-        <input
-          class="footer__mailing-list-input"
-          id="email_input"
-          name="email_input"
-          type="email"
-          value=""
-          placeholder="Ваш e-mail"
-          spellcheck="false"
-        >
-        <button class="form__mailing-list-submit" type="submit">
-          ok
-        </button>
+        <div class="footer__mailing-form-elements">
+          <input
+            class="footer__mailing-list-input"
+            id="email_input"
+            name="email_input"
+            type="email"
+            value=""
+            placeholder="Ваш e-mail"
+            spellcheck="false"
+          >
+          <button class="footer__mailing-list-submit" type="submit">
+            ok
+          </button>
+        </div>
         <p class="footer__copy">&copy; Road Club 2021</p>
         <div class="footer__theme-switch-box theme-switch-box">
-          <div
-            class="theme-switch-box__icon theme_switch-box__icon_theme_light"
+          <div class="theme-switch-box__sun-icon"></div>
+          <input
+            class="theme-switch-box__switch"
+            type="checkbox"
+            id="switchbox"
           >
-          <input class="theme-switch-box__switch" type="checkbox">
-          <div
-            class="theme-switch-box__icon theme_switch-box__icon_theme_dark"
-          >
+          <label class="theme-switch-box__pseudo-switch" for="switchbox">
+            Переключить тему
+          </label>
+          <div class="theme-switch-box__moon-icon"></div>
         </div>
       </form>
     </footer>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

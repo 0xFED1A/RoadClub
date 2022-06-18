@@ -1,0 +1,11 @@
+// rules for link block
+
+.link {
+  font: {
+    size: 18px;
+    weight: generate-numeric-fweight("semibold");
+  }
+  line-height: 28px;
+
+  transition: color $a_transition_speed ease;
+}

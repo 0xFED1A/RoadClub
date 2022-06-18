@@ -1,0 +1,33 @@
+// rules for page block
+
+.page {
+  min-width: 320px;
+  max-width: 1440px;
+
+  margin: 0 auto;
+
+  font-family: "Inter", Arial, sans-serif;
+  -moz: {
+    osx-font-smoothing: grayscale;
+    text-size-adjust: 100%;
+  }
+  -webkit: {
+    font-smoothing: antialiased;
+    text-size-adjust: 100%;
+  }
+  -ms: {
+    text-size-adjust: 100%;
+  }
+  text-rendering: optimizeLegibility;
+
+  background-color: $c_page-bg;
+
+  display: flex;
+  flex-direction: column;
+
+
+  // rules for page__darkened modifier
+  &_darkened {
+    background-color: $c_page-bg_dark; 
+  }
+}
