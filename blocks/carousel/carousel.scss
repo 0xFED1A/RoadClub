@@ -119,5 +119,16 @@
         transform: scaleX(-1) translateX(-5.3px);
       }
     }
+    
+
+    // rules for carousel__control_darkened modifier
+    &_darkened {
+      background-color: $c_carousel-ctrl_dark;
+    }
+
+    &::before {
+      background-image:
+        url("../images/vector/carousel-control/carousel-control_control_dark.svg");
+    }
   }
 }
