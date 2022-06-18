@@ -64,8 +64,8 @@
     }
 
 
-    // rules for bike-type-info__type-switch_active modifier
-    &_active {
+    // rules for bike-type-info__type-switch_type_active-light modifier
+    &_type_active-light {
       color: rgba($c_accent, $o_bike_link_curr);
 
       &:hover {
