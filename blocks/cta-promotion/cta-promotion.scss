@@ -6,12 +6,12 @@
   display: grid;
   grid: {
     template: {
-      areas: 
+      areas:
         "heading picture"
         "text picture"
         "button picture"
         "caption picture";
-      columns: 53.8% 47.45%;
+      columns: 53.8%;
       rows: repeat(3, auto) 1fr;
     }
     auto-flow: row;
@@ -31,6 +31,8 @@
 
   // rules for cta-promotion__text element
   &__text {
+    width: 32vw;
+
     grid-area: text;
   }
 
