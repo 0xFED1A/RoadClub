@@ -23,7 +23,7 @@
   }
 
 
-  // rules for footer__mailing-list-label
+  // rules for footer__mailing-list-label element
   &__mailing-list-label {
     max-width: 230px;
     font: {
@@ -38,7 +38,7 @@
   }
 
 
-  // rules for footer__mailing-elements
+  // rules for footer__mailing-form-elements element
   &__mailing-form-elements {
     max-width: 360px;
     height: 50px;
@@ -56,7 +56,7 @@
   }
 
 
-  // rules for footer__mailing-list-input
+    // rules for footer__mailing-form-elements_darkend modifier
   &__mailing-list-input {
     width: 100%;
     height: 50px;
@@ -99,7 +99,8 @@
   }
 
 
-  // rules for footer__mailing-list-submit
+
+  // rules for footer__mailing-list-submit element
   &__mailing-list-submit {
     margin-right: 22px;
     padding: 0 0 0 20px;
