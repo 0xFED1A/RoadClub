@@ -12,6 +12,14 @@
 
   color: $c_accent;
 
+  @media screen {
+    @media (max-width: 1210px) {
+      max-width: calc($w_text-max-width * 0.8);
+      font-size: 49px;
+      line-height: 54px;
+    }
+  }
+
 
   // rules for heading_darkened modifier
   &_darkened {

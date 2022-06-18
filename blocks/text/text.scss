@@ -13,6 +13,13 @@
 
   color: rgba($c_text, 0.7);
 
+  @media screen {
+    @media (max-width: 1210px) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
 
   // rules for text_darkened modifier
   &_darkened {

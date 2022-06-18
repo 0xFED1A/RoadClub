@@ -110,7 +110,7 @@ switchbox.addEventListener("click", (evt) => {
     for(let element in elementsForThemeSwitch) {
       const currentElement = elementsForThemeSwitch[element];
       currentElement.domObject.forEach(obj => {
-        if (obj.class == elementsForThemeSwitch.bikeLinkActive.class) {
+        if (currentElement.class == elementsForThemeSwitch.bikeLinkActive.class) {
           obj.classList.remove("bike-type-info__type-switch_type_active-dark");
         } else {
           obj.classList.remove(currentElement.class + "_darkened");
