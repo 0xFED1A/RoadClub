@@ -94,14 +94,19 @@
       }
 
 
-      // rules for theme-switchbox__icon_theme_light modifiers
-      &_dark {
-        width: 19.35px;
-        height: 19.35px;
+  // rules for theme-switchbox__moon-icon elmenet
+  &__moon-icon {
+    width: 19.35px;
+    height: 19.35px;
 
-        background-image:
-          url("../images/vector/theme-switch/theme-switch_moon_light.svg");
-      }
+    background-image:
+      url("../images/vector/theme-switch/theme-switch_moon_light.svg");
+
+
+    // rules for theme-switchbox__moon-icon_darkened modifier
+    &_darkened {
+      background-image:
+        url("../images/vector/theme-switch/theme-switch_moon_dark.svg")
     }
   }
 }
