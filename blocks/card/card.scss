@@ -61,5 +61,11 @@
       top: 24px;
       left: 0;
     }
+
+
+    // rules card__name_darkened modifier */
+    &_darkened {
+     color: $c_accent_dark;
+    }
   }
 }
