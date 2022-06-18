@@ -12,7 +12,7 @@
   }
 
   &__figure:hover &__image {
-    transform: scale(1.1); 
+    transform: scale(1.03);
     box-shadow: -5px 15px 20px 0 rgba(#000, 0.2);
   }
 
@@ -20,15 +20,17 @@
     width: 100%;
   }
 
-  
+
   // rules for  card__image element
   &__image {
-    margin: 20px;
+    padding: 20px;
 
     border-radius: 20px;
 
     transition: transform $a_transition_speed_slow ease,
       box-shadow $a_transition_speed_slow ease;
+
+    background-color: $c_page-bg;
   }
 
 
