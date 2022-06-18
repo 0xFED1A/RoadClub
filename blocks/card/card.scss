@@ -27,6 +27,8 @@
 
     border-radius: 20px;
 
+    box-shadow: 0 20px 140px rgba(0, 0, 0, 0.06);
+
     transition: transform $a_transition_speed_slow ease,
       box-shadow $a_transition_speed_slow ease;
 
