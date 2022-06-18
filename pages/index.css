@@ -531,6 +531,9 @@ template {
   color: #151515;
   grid-area: quote;
 }
+.quote__slogan_darkened {
+  color: #fff;
+}
 .quote__author {
   grid-area: author;
   align-self: end;
@@ -543,6 +546,9 @@ template {
   line-height: 20px;
   color: #151515;
 }
+.quote__name_darkened {
+  color: #fff;
+}
 .quote__occupation {
   margin: 8px 0 0 0;
   font-size: 16px;
@@ -550,6 +556,9 @@ template {
   /* swap figma line-height 28 to 40 value for pixelperfect */
   line-height: 40px;
   color: rgba(34, 34, 34, 0.7);
+}
+.quote__occupation_darkened {
+  color: rgba(229, 229, 229, 0.7);
 }
 
 .surface-type-info {
@@ -609,11 +618,23 @@ template {
 .bike-type-info__type-switch:hover {
   color: rgba(34, 34, 34, 0.6);
 }
-.bike-type-info__type-switch_active {
+.bike-type-info__type-switch_type_active-light {
   color: #151515;
 }
-.bike-type-info__type-switch_active:hover {
+.bike-type-info__type-switch_type_active-light:hover {
   color: rgba(21, 21, 21, 0.75);
+}
+.bike-type-info__type-switch_darkened {
+  color: rgba(229, 229, 229, 0.7);
+}
+.bike-type-info__type-switch_darkened:hover {
+  color: rgba(229, 229, 229, 0.5);
+}
+.bike-type-info__type-switch_type_active-dark {
+  color: white;
+}
+.bike-type-info__type-switch_type_active-dark:hover {
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .card__figure {
@@ -639,6 +660,7 @@ template {
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
+  color: #151515;
   position: relative;
 }
 .card__name::after {
@@ -650,6 +672,9 @@ template {
   position: absolute;
   top: 24px;
   left: 0;
+}
+.card__name_darkened {
+  color: #fff;
 }
 
 .train-route-info {
@@ -693,6 +718,12 @@ template {
 }
 .train-route-info__link:hover {
   color: rgba(21, 21, 21, 0.75);
+}
+.train-route-info__link_darkened {
+  color: #fff;
+}
+.train-route-info__link_darkened:hover {
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .carousel {
@@ -767,6 +798,12 @@ template {
 .carousel__control_direction_forward::before {
   transform: scaleX(-1) translateX(-5.3px);
 }
+.carousel__control_darkened {
+  background-color: #434343;
+}
+.carousel__control::before {
+  background-image: url("../images/vector/carousel-control/carousel-control_control_dark.svg");
+}
 
 .footer {
   padding-top: 80px;
@@ -788,6 +825,9 @@ template {
   color: #151515;
   grid-area: label;
 }
+.footer__mailing-list-label_darkened {
+  color: #fff;
+}
 .footer__mailing-form-elements {
   max-width: 360px;
   height: 50px;
@@ -798,6 +838,16 @@ template {
   justify-content: space-between;
   align-items: baseline;
   grid-area: input;
+  transition: border-color 0.2s ease;
+}
+.footer__mailing-form-elements:hover {
+  border-color: #c7c7c7;
+}
+.footer__mailing-form-elements_darkened {
+  border-color: rgba(125, 125, 125, 0.5);
+}
+.footer__mailing-form-elements_darkened:hover {
+  border-color: #7d7d7d;
 }
 .footer__mailing-list-input {
   width: 100%;
@@ -826,6 +876,15 @@ template {
 .footer__mailing-list-input:hover::placeholder {
   color: #151515;
 }
+.footer__mailing-list-input_darkened {
+  color: #fff;
+}
+.footer__mailing-list-input_darkened::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer__mailing-list-input_darkened:hover::placeholder {
+  color: #fff;
+}
 .footer__mailing-list-submit {
   margin-right: 22px;
   padding: 0 0 0 20px;
@@ -835,7 +894,14 @@ template {
   border: 0;
   appearance: none;
   background-color: transparent;
+  color: #151515;
   cursor: pointer;
+}
+.footer__mailing-list-submit_hidden {
+  visibility: hidden;
+}
+.footer__mailing-list-submit_darkened {
+  color: #fff;
 }
 .footer__copy {
   margin: 100px 0 0 0;
@@ -845,10 +911,16 @@ template {
   color: #cfcfcf;
   grid-area: copy;
 }
+.footer__copy_darkened {
+  color: #565656;
+}
 .footer__theme-switch-box {
   grid-area: theme-switch;
   align-self: end;
   justify-self: end;
+}
+.footer_darkened {
+  background-color: #2f2f2f;
 }
 
 .theme-switch-box {
@@ -883,6 +955,9 @@ template {
   display: block;
   background-image: url("../images/vector/theme-switch/theme-switch_base_light.svg");
 }
+.theme-switch-box__switch + .theme-switch-box__pseudo-switch_darkened::before {
+  background-image: url("../images/vector/theme-switch/theme-switch_base_dark.svg");
+}
 .theme-switch-box__switch + .theme-switch-box__pseudo-switch::after {
   width: 20px;
   height: 20px;
@@ -901,15 +976,21 @@ template {
   left: 22px;
   transition: left 0.2s ease;
 }
-.theme-switch-box__icon_theme_light {
+.theme-switch-box__sun-icon {
   width: 28px;
   height: 28px;
   background-image: url("../images/vector/theme-switch/theme-switch_sun_light.svg");
 }
-.theme-switch-box__icon_theme_dark {
+.theme-switch-box__sun-icon_darkened {
+  background-image: url("../images/vector/theme-switch/theme-switch_sun_dark.svg");
+}
+.theme-switch-box__moon-icon {
   width: 19.35px;
   height: 19.35px;
   background-image: url("../images/vector/theme-switch/theme-switch_moon_light.svg");
+}
+.theme-switch-box__moon-icon_darkened {
+  background-image: url("../images/vector/theme-switch/theme-switch_moon_dark.svg");
 }
 
 /*# sourceMappingURL=index.css.map */
