@@ -643,16 +643,17 @@ template {
   cursor: pointer;
 }
 .card__figure:hover .card__image {
-  transform: scale(1.1);
+  transform: scale(1.03);
   box-shadow: -5px 15px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .card__figure:hover .card__name::after {
   width: 100%;
 }
 .card__image {
-  margin: 20px;
+  padding: 20px;
   border-radius: 20px;
   transition: transform 0.7s ease, box-shadow 0.7s ease;
+  background-color: #f4f4f4;
 }
 .card__name {
   /* swap fimga margin value 20px to 15px, 8px for piexeperfectness */
