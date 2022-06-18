@@ -1,7 +1,8 @@
 // rules for train-route-info block
 
 .train-route-info {
-  margin: 30px 0 0 0;
+  /* change figma value mrg-top 30px to 2.22% for responsivness */
+  margin: 2.22% 0 0 0;
   padding: $p_section_padding;
 
   display: grid;
@@ -12,9 +13,11 @@
         "text picture"
         "links picture";
       columns: minmax(min-content, max-content) 48.3%;
+      rows: repeat(2, auto) 2fr;
     }
   }
-  column-gap: 160px;
+  /* swap figma value 160px to 13.4% for responsivness */
+  column-gap: 13.4%;
 
   box-sizing: border-box;
 
@@ -43,17 +46,17 @@
 
   // rules for train-route__text element
   &__text {
-    /* change figma value of margin from 50px to 40px for pixelperfectness */
-    margin: 40px 0 0 0;
+    /* swap figma value 50px to 10% for responsivness */
+    margin: 10% 0 0 0;
 
     grid-area: text;
   }
 
   // rules for train-route-info__links element
   &__links {
-    margin: 182px 0 0 0;
-
     grid-area: links;
+
+    align-self: end;
   }
 
 
@@ -75,7 +78,7 @@
     &:hover {
       color: rgba($c_accent, $o_app-link_hov);
     }
-    
+
 
     // rules for train-route-info__link_darkened modifier
     &_darkened {
